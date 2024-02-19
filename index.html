@@ -1,0 +1,1738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="images2/contentguy.webp" type="image/png">
+	<title>Contentguy</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="mobile-styles.css" media="screen and (max-width: 770px)">
+	<!-- SweetAlert2 CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+	<!-- font-awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+	<!-- Swipper Js -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<!-- Locomotive Js -->
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> -->
+	<!-- GSAP -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+	<!-- ScrollTrigger -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+	<!-- Email Service Api integration -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+	</script>
+	<script type="text/javascript">
+		(function () {
+			emailjs.init({
+				publicKey: "VaLjoOzSohg21I0YL",
+			});
+		})();
+	</script>
+	<!-- SweetAlert2 JS -->
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+	<div class="read-progression" id="scroll-progress"></div>
+	<audio id="background-music" autoplay loop>
+		<source src="./portfolio/audio.mp3" type="audio/mp3">
+	</audio>
+	<div class="cursor-dot" data-cursor-dot></div>
+	<div class="header">
+		<img src="images2/contentguy.webp" alt="top-image" class="top-image" id="reload-image">
+		<div id="menu" class="menu-toggle">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<div id="navbar-mobile" class="navbar-mobile">
+		<ul>
+			<li class="arrow"><a href="#"></a></li>
+			<li><a href="#about">About Us</a></li>
+			<li><a href="#recent-works">Recent Work</a></li>
+			<li><a href="#services">Service</a></li>
+			<li><a href="#blogContainer">Blogs</a></li>
+			<li><a href="#FAQ">FAQs</a></li>
+		</ul>
+	</div>
+
+	<div id="navbar" class="navbar">
+		<ul>
+			<li class="arrow"><a href="#"></a></li>
+			<li><a href="#about">About Us</a></li>
+			<li><a href="#recent-works">Recent Work</a></li>
+			<li><a href="#services">Service</a></li>
+			<li><a href="#blogContainer">Blogs</a></li>
+			<li><a href="#FAQ">FAQs</a></li>
+		</ul>
+	</div>
+
+	<!-- sidebar -->
+	<header class="sidebar-menu">
+		<img id="burger-open" class="open-modal" src="./images2/buttons/open.png" alt="Open Menu">
+		<nav id="meny">
+			<form class="main-container">
+				<h1>ENQUIRY</h1>
+				<img id="burger-close" class="form-img" src="./images2/buttons/close.png" alt="Close Menu">
+				<input id="email_id" name="email" type="email" placeholder="Enter Your Email">
+				<hr class="hr">
+				<textarea id="message" name="message" placeholder="Your Message?"></textarea>
+				<div class="dash"></div>
+				<a href="#" onclick="sendMail()" class="btnn">Contact</a>
+				<div class="side-texts">
+					<h4>Contentguy is a team of internet marketers specialized in creating internet experiences
+						that
+						boost your business. Based in California, USA we offer our services all around the
+						world.
+					</h4>
+					<div class="Contactcontainer">
+						<h5>Dhaka Office <br> 136, Kalachadpur, North Baridhara, Dhaka 1206,<br> Bangladesh</h5>
+						<h5>California Office <br>
+							123 Orchard Park Cir Davis, CA 95616,<br>
+							USA</h5>
+						<h5>Contacts <br>
+							+8801614395930 <br>
+							<a style="text-decoration: none; color: #ffffff; cursor: none;"
+								href="mailto:ridwan@xrougex.com">ridwan@xrougex.com</a>
+
+						</h5>
+						<h5>Contacts <br>
+							+1 (408) 333-4849 <br>
+							<a style="text-decoration: none; color: #ffffff; cursor: none;"
+								href="mailto:rehnuma@contentguy.co">rehnuma@contentguy.co</a>
+						</h5>
+					</div>
+
+				</div>
+			</form>
+		</nav>
+	</header>
+
+	<!-- Hero -->
+	<div id="herohero" class="hero">
+		<img src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708348695/index/banner1_mmlm64.webp" alt="Left Image" class="left-image">
+		<div class="contentt">
+			<h1>The web agency that's shaking things up.
+			</h1>
+			<h2>Epic design subscriptions to supercharge your brand!</h2>
+			<button id="burger-open" class="cta-button">Let's Talk</button>
+			<h5>Design and develop <span class="love">&#x1F496;</span>almost anything, </h5>
+
+		</div>
+		<img src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708348697/index/banner2_qarvdc.webp" alt="Right Image" class="right-image">
+	</div>
+
+	<!-- Projects -->
+	<div class="projects">
+		<div class="image-overlay">
+			<img class="rotating-image"
+				src="https://assets.website-files.com/5837424ae11409586f837994/61250d3dea79031fe9f7246a_Frame.svg"
+				alt="">
+		</div>
+		<div class="image-container">
+
+			<img src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708348685/index/pr5_bymbpr.webp" alt="">
+			<img src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708348675/index/pr3_j9t6mq.webp" alt="">
+			<img src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708348682/index/pr4_mqvdcx.webp" alt="">
+			<img src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708348671/index/pr2_qcfumw.webp" alt="">
+
+			<img src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708348687/index/pr6_tw4auv.webp" alt="">
+			<img src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708348690/index/pr7_qdzoxc.webp" alt="">
+			<img src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708348657/index/pr1_vh5b23.webp" alt="">
+
+		</div>
+	</div>
+
+	<div class="white-container">
+		<div class="column">
+			<h2>
+				Website Development and Design subscriptions to scale your business
+			</h2>
+			<p>Old-school designs? Nah, we're the new cool kids on the block!</p>
+		</div>
+		<div class="row">
+			<div class="image-card">
+				<lottie-player
+					src="https://assets.website-files.com/5837424ae11409586f837994/5e1767da10a1f51ca4fa361f_data.json"
+					background speed="1" style="width: 200px; height: 100px" direction="1" mode="normal" loop autoplay>
+				</lottie-player>
+				<p>Signup with us and get us started on a Strategy with a focused meeting.</p>
+			</div>
+			<div class="image-card">
+				<lottie-player
+					src="https://assets.website-files.com/5837424ae11409586f837994/5e177abae85f69bf6f2f813a_data.json"
+					speed="1" style="width: 300px; height: 100px" direction="1" mode="normal" loop
+					autoplay></lottie-player>
+				<p>We strategize and create exceptional web, mobile, design experiences with our
+					multi-disciplinary
+					development team.</p>
+			</div>
+			<div class="image-card">
+				<lottie-player
+					src="https://assets.website-files.com/5837424ae11409586f837994/5e177f46fb9c030823177d84_data.json"
+					speed="1" style="width: 300px; height: 100px" direction="1" mode="normal" loop
+					autoplay></lottie-player>
+				<p>We won't stop until you're doing the happy dance! </p>
+
+			</div>
+
+		</div>
+
+
+		<div id="about" class="pink-column">
+			<div class="pink-column-img">
+				<img class="pink-column-left" src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708348655/index/pcl_ahrl6i.webp" alt="">
+				<img class="pink-column-right"
+					src="https://assets.website-files.com/5837424ae11409586f837994/6119d9897e15e38d7e0c8bea_52.svg"
+					alt="">
+			</div>
+			<img src="https://assets.website-files.com/5837424ae11409586f837994/6119d7a83723f6d0114590ab_quotation.svg"
+				alt="">
+			<h3 style="font-size: 30px;">Originating as a marketing agency, we dared to step into the saturated
+				web
+				design market. Recognizing a gap, we observed agencies offering web services without truly
+				grasping
+				the intricacies of businesses model or existing branding.Today, we triumphantly scale
+				businesses,
+				crafting digital products with a profound understanding of our clients' enterprises. </h3>
+		</div>
+
+		<div class="blue-container-wraper">
+			<div class="blue-img-holder">
+				<img class="blue-container-right" src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708348704/index/blr_zgcpaq.webp" alt="">
+				<img class="blue-container-middle"
+					src="https://assets.website-files.com/5837424ae11409586f837994/6119d83a539ea14de7db7bac_Group%2022.svg"
+					alt="">
+				<img class="blue-container-left" src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708348703/index/bll_kogvw4.webp" alt="">
+			</div>
+			<div class="blue-container">
+				<img style="position: absolute;left: 30% ; top: 80px;"
+					src="https://assets.website-files.com/5837424ae11409586f837994/6119d7a83723f6d0114590ab_quotation.svg"
+					alt="">
+				<h1>Great design isn't just a king; it's the life of the online party! </h1>
+				<h2>Your website's design, coupled with effective SEO, has the power to transform everything.
+					It's
+					not just about looking good; it's about making an impact, capturing attention, and driving
+					results
+				</h2>
+			</div>
+		</div>
+	</div>
+
+	<!-- logo marqueee -->
+	<div class="logo-container" id="logo-container">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=183,h=49,fit=crop/YKb19X3qgWCjnnre/fn281kb6hlaanl5cxht4t6yxvc4-AR02zlreLxhX775g.webp"
+			alt="Logo 1">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=328,h=68,fit=crop/YKb19X3qgWCjnnre/eh1qi0bltxktzcmwlrsprusfj3i-A852y6ODevIKqVNG.webp"
+			alt="Logo 2">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=171,h=57,fit=crop/YKb19X3qgWCjnnre/shortcut-stickers-select-client-list_0005_layer-10-A3Qa4E3aG0UrBJnL.png"
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=328,h=67,fit=crop/YKb19X3qgWCjnnre/shortcut-stickers-select-client-list_0000_layer-15-A3Qa4E3rJVSg4jKa.png"
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=164,h=147,fit=crop/YKb19X3qgWCjnnre/6hadhqzvq1b2hepu3dwsai6dojq-dJoe0G9lb2HGZNrK.webp"
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=328,h=129,fit=crop/YKb19X3qgWCjnnre/shortcut-stickers-select-client-list_0003_layer-12-YD085jWvnRs2vXVM.png"
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=203,h=111,fit=crop/YKb19X3qgWCjnnre/xr1ouqs8il8s4jzjoxhbmz10-A852y6ODebt97bQn.webp"
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=149,h=121,fit=crop/YKb19X3qgWCjnnre/mebjqd31an1ukt4eiishckcnc-d95D6ExM43I43QN7.webp"
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=328,h=106,fit=crop/YKb19X3qgWCjnnre/uveqroonpbepfj5zgnw0qvs82x0-d95D6ExM1ZiqPObl.webp"
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=165,h=65,fit=crop/YKb19X3qgWCjnnre/avwptlvqlon7ipvfq8goku7ki4-mnlnk7R2WzF883V9.webp"
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=172,h=78,fit=crop/YKb19X3qgWCjnnre/shortcut-stickers-select-client-list_0011_layer-7-m2WBkbZ4qvH0p2wg.png"
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=142,h=46,fit=crop/YKb19X3qgWCjnnre/trbjajhzib3fv4s6ygorglncby0-dJoe0G9lZKc6r8qX.webp"
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=159,h=89,fit=crop/YKb19X3qgWCjnnre/shortcut-stickers-select-client-list_0004_layer-11-dJoe0G9NjZcBElQa.png "
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=183,h=49,fit=crop/YKb19X3qgWCjnnre/fn281kb6hlaanl5cxht4t6yxvc4-AR02zlreLxhX775g.webp"
+			alt="Logo 1">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=328,h=68,fit=crop/YKb19X3qgWCjnnre/eh1qi0bltxktzcmwlrsprusfj3i-A852y6ODevIKqVNG.webp"
+			alt="Logo 2">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=171,h=57,fit=crop/YKb19X3qgWCjnnre/shortcut-stickers-select-client-list_0005_layer-10-A3Qa4E3aG0UrBJnL.png"
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=328,h=67,fit=crop/YKb19X3qgWCjnnre/shortcut-stickers-select-client-list_0000_layer-15-A3Qa4E3rJVSg4jKa.png"
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=164,h=147,fit=crop/YKb19X3qgWCjnnre/6hadhqzvq1b2hepu3dwsai6dojq-dJoe0G9lb2HGZNrK.webp"
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=328,h=129,fit=crop/YKb19X3qgWCjnnre/shortcut-stickers-select-client-list_0003_layer-12-YD085jWvnRs2vXVM.png"
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=203,h=111,fit=crop/YKb19X3qgWCjnnre/xr1ouqs8il8s4jzjoxhbmz10-A852y6ODebt97bQn.webp"
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=149,h=121,fit=crop/YKb19X3qgWCjnnre/mebjqd31an1ukt4eiishckcnc-d95D6ExM43I43QN7.webp"
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=328,h=106,fit=crop/YKb19X3qgWCjnnre/uveqroonpbepfj5zgnw0qvs82x0-d95D6ExM1ZiqPObl.webp"
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=165,h=65,fit=crop/YKb19X3qgWCjnnre/avwptlvqlon7ipvfq8goku7ki4-mnlnk7R2WzF883V9.webp"
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=172,h=78,fit=crop/YKb19X3qgWCjnnre/shortcut-stickers-select-client-list_0011_layer-7-m2WBkbZ4qvH0p2wg.png"
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=142,h=46,fit=crop/YKb19X3qgWCjnnre/trbjajhzib3fv4s6ygorglncby0-dJoe0G9lZKc6r8qX.webp"
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=159,h=89,fit=crop/YKb19X3qgWCjnnre/shortcut-stickers-select-client-list_0004_layer-11-dJoe0G9NjZcBElQa.png "
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=183,h=49,fit=crop/YKb19X3qgWCjnnre/fn281kb6hlaanl5cxht4t6yxvc4-AR02zlreLxhX775g.webp"
+			alt="Logo 1">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=328,h=68,fit=crop/YKb19X3qgWCjnnre/eh1qi0bltxktzcmwlrsprusfj3i-A852y6ODevIKqVNG.webp"
+			alt="Logo 2">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=171,h=57,fit=crop/YKb19X3qgWCjnnre/shortcut-stickers-select-client-list_0005_layer-10-A3Qa4E3aG0UrBJnL.png"
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=328,h=67,fit=crop/YKb19X3qgWCjnnre/shortcut-stickers-select-client-list_0000_layer-15-A3Qa4E3rJVSg4jKa.png"
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=164,h=147,fit=crop/YKb19X3qgWCjnnre/6hadhqzvq1b2hepu3dwsai6dojq-dJoe0G9lb2HGZNrK.webp"
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=328,h=129,fit=crop/YKb19X3qgWCjnnre/shortcut-stickers-select-client-list_0003_layer-12-YD085jWvnRs2vXVM.png"
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=203,h=111,fit=crop/YKb19X3qgWCjnnre/xr1ouqs8il8s4jzjoxhbmz10-A852y6ODebt97bQn.webp"
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=149,h=121,fit=crop/YKb19X3qgWCjnnre/mebjqd31an1ukt4eiishckcnc-d95D6ExM43I43QN7.webp"
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=328,h=106,fit=crop/YKb19X3qgWCjnnre/uveqroonpbepfj5zgnw0qvs82x0-d95D6ExM1ZiqPObl.webp"
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=165,h=65,fit=crop/YKb19X3qgWCjnnre/avwptlvqlon7ipvfq8goku7ki4-mnlnk7R2WzF883V9.webp"
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=172,h=78,fit=crop/YKb19X3qgWCjnnre/shortcut-stickers-select-client-list_0011_layer-7-m2WBkbZ4qvH0p2wg.png"
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=142,h=46,fit=crop/YKb19X3qgWCjnnre/trbjajhzib3fv4s6ygorglncby0-dJoe0G9lZKc6r8qX.webp"
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=159,h=89,fit=crop/YKb19X3qgWCjnnre/shortcut-stickers-select-client-list_0004_layer-11-dJoe0G9NjZcBElQa.png "
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=183,h=49,fit=crop/YKb19X3qgWCjnnre/fn281kb6hlaanl5cxht4t6yxvc4-AR02zlreLxhX775g.webp"
+			alt="Logo 1">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=328,h=68,fit=crop/YKb19X3qgWCjnnre/eh1qi0bltxktzcmwlrsprusfj3i-A852y6ODevIKqVNG.webp"
+			alt="Logo 2">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=171,h=57,fit=crop/YKb19X3qgWCjnnre/shortcut-stickers-select-client-list_0005_layer-10-A3Qa4E3aG0UrBJnL.png"
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=328,h=67,fit=crop/YKb19X3qgWCjnnre/shortcut-stickers-select-client-list_0000_layer-15-A3Qa4E3rJVSg4jKa.png"
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=164,h=147,fit=crop/YKb19X3qgWCjnnre/6hadhqzvq1b2hepu3dwsai6dojq-dJoe0G9lb2HGZNrK.webp"
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=328,h=129,fit=crop/YKb19X3qgWCjnnre/shortcut-stickers-select-client-list_0003_layer-12-YD085jWvnRs2vXVM.png"
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=203,h=111,fit=crop/YKb19X3qgWCjnnre/xr1ouqs8il8s4jzjoxhbmz10-A852y6ODebt97bQn.webp"
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=149,h=121,fit=crop/YKb19X3qgWCjnnre/mebjqd31an1ukt4eiishckcnc-d95D6ExM43I43QN7.webp"
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=328,h=106,fit=crop/YKb19X3qgWCjnnre/uveqroonpbepfj5zgnw0qvs82x0-d95D6ExM1ZiqPObl.webp"
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=165,h=65,fit=crop/YKb19X3qgWCjnnre/avwptlvqlon7ipvfq8goku7ki4-mnlnk7R2WzF883V9.webp"
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=172,h=78,fit=crop/YKb19X3qgWCjnnre/shortcut-stickers-select-client-list_0011_layer-7-m2WBkbZ4qvH0p2wg.png"
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=142,h=46,fit=crop/YKb19X3qgWCjnnre/trbjajhzib3fv4s6ygorglncby0-dJoe0G9lZKc6r8qX.webp"
+			alt="Logo 3">
+		<img class="logo"
+			src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=159,h=89,fit=crop/YKb19X3qgWCjnnre/shortcut-stickers-select-client-list_0004_layer-11-dJoe0G9NjZcBElQa.png "
+			alt="Logo 3">
+
+	</div>
+
+	<!-- review section -->
+	<h1 style="margin-top: 100px; color: white; text-align: center ; font-family: 'Poppins'; margin-bottom: -30px;">
+		THOUGHTS FROM OUR CLIENTS
+	</h1>
+
+	<!-- Swiper -->
+	<div class="swiper slider-container mySwiper">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<div style="padding: 10% 7% 10% 10%;">
+					<img class="top-coma"
+						src="https://assets.website-files.com/5837424ae11409586f837994/6119d7a83723f6d0114590ab_quotation.svg"
+						alt="">
+					<img class="bottom-coma"
+						src="https://assets.website-files.com/5837424ae11409586f837994/6119d7a83723f6d0114590ab_quotation.svg"
+						alt="">
+					<h1 class="">Their Team is Fluid and Scalable with their access to huge design
+						talents. They
+						ensure we have resources to tie up any project.</h1>
+					<h2 class="slide-h2">
+						Rob Malik, <br>
+						Senior Product Manager, GQ India.
+					</h2>
+				</div>
+			</div>
+
+		
+			<div class="swiper-slide">
+				<div style="padding: 10% 7% 10% 10%;">
+					<img class="top-coma"
+						src="https://assets.website-files.com/5837424ae11409586f837994/6119d7a83723f6d0114590ab_quotation.svg"
+						alt="">
+					<img class="bottom-coma"
+						src="https://assets.website-files.com/5837424ae11409586f837994/6119d7a83723f6d0114590ab_quotation.svg"
+						alt="">
+					<h1 class="">Impressed by the seamless collaboration, we're thrilled to continue working
+						with CXR.Agency on the next phase of our groundbreaking project.</h1>
+					<h2 class="slide-h2">
+						Emily Sanchez, <br>
+						CEO, Tech Innovators Inc.
+					</h2>
+				</div>
+			</div>
+
+			<div class="swiper-slide">
+				<div style="padding: 10% 7% 10% 10%;">
+					<img class="top-coma"
+						src="https://assets.website-files.com/5837424ae11409586f837994/6119d7a83723f6d0114590ab_quotation.svg"
+						alt="">
+					<img class="bottom-coma"
+						src="https://assets.website-files.com/5837424ae11409586f837994/6119d7a83723f6d0114590ab_quotation.svg"
+						alt="">
+					<h1 class="">Their proactive approach stood out. CXR.Agency stayed on top of every
+						detail, ensuring tasks were efficiently managed and completed. It's a partnership we
+						value.</h1>
+					<h2 class="slide-h2">
+						Alex Rodriguez, <br>
+						Head of Operations, Global Ventures PLC.
+					</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- case study section -->
+	<div id="casecase" class="case-study">
+		<div style="color: white;" class="caseContainer">
+			<h1>Case</h1>
+			<h2>Studies</h2>
+			<button id="burger-open" class="btnnn btnnn-1 btnnn-1a">Free Consultation</button>
+		</div>
+		<div class="swiperr myySwiper">
+			<div class="swiper-wrapper caseSlider">
+				<a href="./case.html" target="_blank" class="swiper-slide swiperr-slide">
+					<img src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708263099/1_iy65dd.webp" alt="">
+					<div style="color: white; font-weight: 600; font-family: 'Poppins';" class="popup">Click</div>
+				</a>
+				<a href="./case3.html" target="_blank" class="swiper-slide swiperr-slide">
+					<img src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708263099/2_zkl32w.webp" alt="">
+					<div style="color: white; font-weight: 600; font-family: 'Poppins';" class="popup">Click</div>
+				</a>
+				<a href="./case2.html" target="_blank" class="swiper-slide swiperr-slide">
+					<img src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708263099/3_wb1bir.webp" alt="">
+					<div style="color: white; font-weight: 600; font-family: 'Poppins';" class="popup">Click</div>
+				</a>
+				<a href="./case4.html" target="_blank" class="swiper-slide swiperr-slide">
+					<img src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708263099/4_xhg7xo.webp" alt="">
+					<div style="color: white; font-weight: 600; font-family: 'Poppins';" class="popup">Click</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- Marquee section -->
+	<div style="margin-top: 4rem; color: white;" class="Marquee-section">
+		<div id="marqueeee">
+			<div class="marquee-container">
+				<div style="margin-bottom: 0.4rem;" class="pic-container">
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967d51a31b7bf91cde65_Wordpress-1.svg"
+							alt="Mailchimp">
+						<p>Mailchimp</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967b68f85b0f14c55350_Wordpress.svg"
+							alt="Wordpress">
+						<p>Wordpress</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f9677f97c9d5a561240c4_Elementor-1.svg"
+							alt="Sitecore">
+						<p>Sitecore</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96779df7f6c341256487_Webflow.svg"
+							alt="Webflow">
+						<p>Webflow</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96770caf4ed363e23731_Elementor.svg"
+							alt="Elementor">
+						<p>Elementor</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96777d4fda2fb16cdcd1_Shopify-1.svg"
+							alt="GoDaddy">
+						<p>GoDaddy</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96775cbd4526e99aa632_SquareSpace.svg"
+							alt="Squarespace">
+						<p>Squarespace</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967668f85b3a95c55316_Shopify.svg"
+							alt="Shopify">
+						<p>Shopify</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967635621868188a88cc_Wix.svg"
+							alt="Wix">
+						<p>Wix</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96760caf4e7d4ae2371d_Figma.svg"
+							alt="Figma">
+						<p>Figma</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967d51a31b7bf91cde65_Wordpress-1.svg"
+							alt="Mailchimp">
+						<p>Mailchimp</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967b68f85b0f14c55350_Wordpress.svg"
+							alt="Wordpress">
+						<p>Wordpress</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f9677f97c9d5a561240c4_Elementor-1.svg"
+							alt="Sitecore">
+						<p>Sitecore</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96779df7f6c341256487_Webflow.svg"
+							alt="Webflow">
+						<p>Webflow</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96770caf4ed363e23731_Elementor.svg"
+							alt="Elementor">
+						<p>Elementor</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96777d4fda2fb16cdcd1_Shopify-1.svg"
+							alt="GoDaddy">
+						<p>GoDaddy</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96775cbd4526e99aa632_SquareSpace.svg"
+							alt="Squarespace">
+						<p>Squarespace</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967668f85b3a95c55316_Shopify.svg"
+							alt="Shopify">
+						<p>Shopify</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967635621868188a88cc_Wix.svg"
+							alt="Wix">
+						<p>Wix</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96760caf4e7d4ae2371d_Figma.svg"
+							alt="Figma">
+						<p>Figma</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967d51a31b7bf91cde65_Wordpress-1.svg"
+							alt="Mailchimp">
+						<p>Mailchimp</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967b68f85b0f14c55350_Wordpress.svg"
+							alt="Wordpress">
+						<p>Wordpress</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f9677f97c9d5a561240c4_Elementor-1.svg"
+							alt="Sitecore">
+						<p>Sitecore</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96779df7f6c341256487_Webflow.svg"
+							alt="Webflow">
+						<p>Webflow</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96770caf4ed363e23731_Elementor.svg"
+							alt="Elementor">
+						<p>Elementor</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96777d4fda2fb16cdcd1_Shopify-1.svg"
+							alt="GoDaddy">
+						<p>GoDaddy</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96775cbd4526e99aa632_SquareSpace.svg"
+							alt="Squarespace">
+						<p>Squarespace</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967668f85b3a95c55316_Shopify.svg"
+							alt="Shopify">
+						<p>Shopify</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967635621868188a88cc_Wix.svg"
+							alt="Wix">
+						<p>Wix</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96760caf4e7d4ae2371d_Figma.svg"
+							alt="Figma">
+						<p>Figma</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967d51a31b7bf91cde65_Wordpress-1.svg"
+							alt="Mailchimp">
+						<p>Mailchimp</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967b68f85b0f14c55350_Wordpress.svg"
+							alt="Wordpress">
+						<p>Wordpress</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f9677f97c9d5a561240c4_Elementor-1.svg"
+							alt="Sitecore">
+						<p>Sitecore</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96779df7f6c341256487_Webflow.svg"
+							alt="Webflow">
+						<p>Webflow</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96770caf4ed363e23731_Elementor.svg"
+							alt="Elementor">
+						<p>Elementor</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96777d4fda2fb16cdcd1_Shopify-1.svg"
+							alt="GoDaddy">
+						<p>GoDaddy</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96775cbd4526e99aa632_SquareSpace.svg"
+							alt="Squarespace">
+						<p>Squarespace</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967668f85b3a95c55316_Shopify.svg"
+							alt="Shopify">
+						<p>Shopify</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967635621868188a88cc_Wix.svg"
+							alt="Wix">
+						<p>Wix</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96760caf4e7d4ae2371d_Figma.svg"
+							alt="Figma">
+						<p>Figma</p>
+					</a>
+				</div>
+				<div style="margin-bottom: 0.4rem;" class="pic-containerr">
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967d51a31b7bf91cde65_Wordpress-1.svg"
+							alt="Mailchimp">
+						<p>Mailchimp</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967b68f85b0f14c55350_Wordpress.svg"
+							alt="Wordpress">
+						<p>Wordpress</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f9677f97c9d5a561240c4_Elementor-1.svg"
+							alt="Sitecore">
+						<p>Sitecore</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96779df7f6c341256487_Webflow.svg"
+							alt="Webflow">
+						<p>Webflow</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96770caf4ed363e23731_Elementor.svg"
+							alt="Elementor">
+						<p>Elementor</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96777d4fda2fb16cdcd1_Shopify-1.svg"
+							alt="GoDaddy">
+						<p>GoDaddy</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96775cbd4526e99aa632_SquareSpace.svg"
+							alt="Squarespace">
+						<p>Squarespace</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967668f85b3a95c55316_Shopify.svg"
+							alt="Shopify">
+						<p>Shopify</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967635621868188a88cc_Wix.svg"
+							alt="Wix">
+						<p>Wix</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96760caf4e7d4ae2371d_Figma.svg"
+							alt="Figma">
+						<p>Figma</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967d51a31b7bf91cde65_Wordpress-1.svg"
+							alt="Mailchimp">
+						<p>Mailchimp</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967b68f85b0f14c55350_Wordpress.svg"
+							alt="Wordpress">
+						<p>Wordpress</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f9677f97c9d5a561240c4_Elementor-1.svg"
+							alt="Sitecore">
+						<p>Sitecore</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96779df7f6c341256487_Webflow.svg"
+							alt="Webflow">
+						<p>Webflow</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96770caf4ed363e23731_Elementor.svg"
+							alt="Elementor">
+						<p>Elementor</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96777d4fda2fb16cdcd1_Shopify-1.svg"
+							alt="GoDaddy">
+						<p>GoDaddy</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96775cbd4526e99aa632_SquareSpace.svg"
+							alt="Squarespace">
+						<p>Squarespace</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967668f85b3a95c55316_Shopify.svg"
+							alt="Shopify">
+						<p>Shopify</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967635621868188a88cc_Wix.svg"
+							alt="Wix">
+						<p>Wix</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96760caf4e7d4ae2371d_Figma.svg"
+							alt="Figma">
+						<p>Figma</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967d51a31b7bf91cde65_Wordpress-1.svg"
+							alt="Mailchimp">
+						<p>Mailchimp</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967b68f85b0f14c55350_Wordpress.svg"
+							alt="Wordpress">
+						<p>Wordpress</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f9677f97c9d5a561240c4_Elementor-1.svg"
+							alt="Sitecore">
+						<p>Sitecore</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96779df7f6c341256487_Webflow.svg"
+							alt="Webflow">
+						<p>Webflow</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96770caf4ed363e23731_Elementor.svg"
+							alt="Elementor">
+						<p>Elementor</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96777d4fda2fb16cdcd1_Shopify-1.svg"
+							alt="GoDaddy">
+						<p>GoDaddy</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96775cbd4526e99aa632_SquareSpace.svg"
+							alt="Squarespace">
+						<p>Squarespace</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967668f85b3a95c55316_Shopify.svg"
+							alt="Shopify">
+						<p>Shopify</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967635621868188a88cc_Wix.svg"
+							alt="Wix">
+						<p>Wix</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96760caf4e7d4ae2371d_Figma.svg"
+							alt="Figma">
+						<p>Figma</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967d51a31b7bf91cde65_Wordpress-1.svg"
+							alt="Mailchimp">
+						<p>Mailchimp</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967b68f85b0f14c55350_Wordpress.svg"
+							alt="Wordpress">
+						<p>Wordpress</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f9677f97c9d5a561240c4_Elementor-1.svg"
+							alt="Sitecore">
+						<p>Sitecore</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96779df7f6c341256487_Webflow.svg"
+							alt="Webflow">
+						<p>Webflow</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96770caf4ed363e23731_Elementor.svg"
+							alt="Elementor">
+						<p>Elementor</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96777d4fda2fb16cdcd1_Shopify-1.svg"
+							alt="GoDaddy">
+						<p>GoDaddy</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96775cbd4526e99aa632_SquareSpace.svg"
+							alt="Squarespace">
+						<p>Squarespace</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967668f85b3a95c55316_Shopify.svg"
+							alt="Shopify">
+						<p>Shopify</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967635621868188a88cc_Wix.svg"
+							alt="Wix">
+						<p>Wix</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96760caf4e7d4ae2371d_Figma.svg"
+							alt="Figma">
+						<p>Figma</p>
+					</a>
+				</div>
+				<div class="pic-containerrr">
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967b68f85b0f14c55350_Wordpress.svg"
+							alt="Wordpress">
+						<p>Wordpress</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967d51a31b7bf91cde65_Wordpress-1.svg"
+							alt="Mailchimp">
+						<p>Mailchimp</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96779df7f6c341256487_Webflow.svg"
+							alt="Webflow">
+						<p>Webflow</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f9677f97c9d5a561240c4_Elementor-1.svg"
+							alt="Sitecore">
+						<p>Sitecore</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96770caf4ed363e23731_Elementor.svg"
+							alt="Elementor">
+						<p>Elementor</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96775cbd4526e99aa632_SquareSpace.svg"
+							alt="Squarespace">
+						<p>Squarespace</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96777d4fda2fb16cdcd1_Shopify-1.svg"
+							alt="GoDaddy">
+						<p>GoDaddy</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967668f85b3a95c55316_Shopify.svg"
+							alt="Shopify">
+						<p>Shopify</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967635621868188a88cc_Wix.svg"
+							alt="Wix">
+						<p>Wix</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967d51a31b7bf91cde65_Wordpress-1.svg"
+							alt="Mailchimp">
+						<p>Mailchimp</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96760caf4e7d4ae2371d_Figma.svg"
+							alt="Figma">
+						<p>Figma</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967b68f85b0f14c55350_Wordpress.svg"
+							alt="Wordpress">
+						<p>Wordpress</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96779df7f6c341256487_Webflow.svg"
+							alt="Webflow">
+						<p>Webflow</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f9677f97c9d5a561240c4_Elementor-1.svg"
+							alt="Sitecore">
+						<p>Sitecore</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96770caf4ed363e23731_Elementor.svg"
+							alt="Elementor">
+						<p>Elementor</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96775cbd4526e99aa632_SquareSpace.svg"
+							alt="Squarespace">
+						<p>Squarespace</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96777d4fda2fb16cdcd1_Shopify-1.svg"
+							alt="GoDaddy">
+						<p>GoDaddy</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967668f85b3a95c55316_Shopify.svg"
+							alt="Shopify">
+						<p>Shopify</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96760caf4e7d4ae2371d_Figma.svg"
+							alt="Figma">
+						<p>Figma</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967635621868188a88cc_Wix.svg"
+							alt="Wix">
+						<p>Wix</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967d51a31b7bf91cde65_Wordpress-1.svg"
+							alt="Mailchimp">
+						<p>Mailchimp</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967b68f85b0f14c55350_Wordpress.svg"
+							alt="Wordpress">
+						<p>Wordpress</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96779df7f6c341256487_Webflow.svg"
+							alt="Webflow">
+						<p>Webflow</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96770caf4ed363e23731_Elementor.svg"
+							alt="Elementor">
+						<p>Elementor</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f9677f97c9d5a561240c4_Elementor-1.svg"
+							alt="Sitecore">
+						<p>Sitecore</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96775cbd4526e99aa632_SquareSpace.svg"
+							alt="Squarespace">
+						<p>Squarespace</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967668f85b3a95c55316_Shopify.svg"
+							alt="Shopify">
+						<p>Shopify</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96777d4fda2fb16cdcd1_Shopify-1.svg"
+							alt="GoDaddy">
+						<p>GoDaddy</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967635621868188a88cc_Wix.svg"
+							alt="Wix">
+						<p>Wix</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96760caf4e7d4ae2371d_Figma.svg"
+							alt="Figma">
+						<p>Figma</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967d51a31b7bf91cde65_Wordpress-1.svg"
+							alt="Mailchimp">
+						<p>Mailchimp</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967b68f85b0f14c55350_Wordpress.svg"
+							alt="Wordpress">
+						<p>Wordpress</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f9677f97c9d5a561240c4_Elementor-1.svg"
+							alt="Sitecore">
+						<p>Sitecore</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96779df7f6c341256487_Webflow.svg"
+							alt="Webflow">
+						<p>Webflow</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96770caf4ed363e23731_Elementor.svg"
+							alt="Elementor">
+						<p>Elementor</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96777d4fda2fb16cdcd1_Shopify-1.svg"
+							alt="GoDaddy">
+						<p>GoDaddy</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96775cbd4526e99aa632_SquareSpace.svg"
+							alt="Squarespace">
+						<p>Squarespace</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967668f85b3a95c55316_Shopify.svg"
+							alt="Shopify">
+						<p>Shopify</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f967635621868188a88cc_Wix.svg"
+							alt="Wix">
+						<p>Wix</p>
+					</a>
+					<a class="m-item">
+						<img src="https://assets-global.website-files.com/630bc5625ada9a1e2dbb10a6/631f96760caf4e7d4ae2371d_Figma.svg"
+							alt="Figma">
+						<p>Figma</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- benefits -->
+	<div class="benefits" id="benefits">
+		<img class="benefits-top-img"
+			src="https://assets.website-files.com/5837424ae11409586f837994/611a9e387d080fa68df0f888_Group%2048.svg"
+			alt="">
+		<h2>Offload your troubles</h2>
+		<h3>We help business and startups to create and establish a digital space for their business</h3>
+		<button id="burger-open" class="cta-button">Book Consultation</button>
+		<div class="six-grid">
+			<div class="grid-element">
+				<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+				<lottie-player
+					src="https://assets.website-files.com/5837424ae11409586f837994/5e18bc1d88b6fc3d1fb92ac0_data.json"
+					background speed="1" style="width: 100px; height: 100px" direction="1" mode="normal" loop
+					autoplay></lottie-player>
+				<h3>Lightning fast delivery</h3>
+				<p>We deliver most projects in a week. For just design we take mere days.</p>
+			</div>
+			<div class="grid-element">
+				<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+				<lottie-player src="https://lottie.host/93ab8f02-fe33-46bf-a411-be2d8d904c19/PIcKlsi1Je.json" background
+					speed="1" style="width: 220px; margin-top: -50px; margin-bottom: 30px; height: 220px" direction="1"
+					mode="normal" loop autoplay></lottie-player>
+				<h3 style="margin-top: -60px;">Top-notch quality</h3>
+				<p>Insane design quality at your fingertips whenever you need it. However you need it.</p>
+			</div>
+			<div class="grid-element">
+				<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+				<lottie-player
+					src="https://assets.website-files.com/5837424ae11409586f837994/5e18c7197df12e9d9354f23a_data.json"
+					background speed="1" style="width: 100px; height: 100px" direction="1" mode="normal" loop
+					autoplay></lottie-player>
+				<h3>Sound Brading 🌟</h3>
+				<p>Our Branding experts are keen to make our work pitch perfectly with you business and
+					Image.
+				</p>
+			</div>
+			<div class="grid-element">
+				<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+				<lottie-player
+					src="https://assets.website-files.com/5837424ae11409586f837994/5e18ae5986ccdc433f0da4c3_data.json"
+					background speed="1" style="width: 100px; height: 100px" direction="1" mode="normal" loop
+					autoplay></lottie-player>
+				<h3>Unique and all yours</h3>
+				<p>Each of your designs is made especially for you and is 100% yours.</p>
+			</div>
+
+		</div>
+
+	</div>
+	<!-- recent-works -->
+	<div>
+		<div class="recent-works" id="recent-works">
+			<img class="recent-works-img-top"
+				src="https://assets.website-files.com/5837424ae11409586f837994/6119d83a539ea14de7db7bac_Group%2022.svg"
+				alt="">
+			<img class="recent-works-img-top-right" src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708348692/index/rwitr_etukwy.webp" alt="">
+
+			<h1>Recent Works</h1>
+			<h2>Award winning designs, and nothing less</h2>
+			<div class="button-container">
+				<a target="_blank" href="portfolio/index.html"><button>View Website Portfolio</button></a>
+				<a target="_blank" href="https://behance.net/ridwanzune"><button>View Design
+						Portfolio</button></a>
+			</div>
+		</div>
+
+		<div class="projects-grid">
+			<img src="https://assets.zyrosite.com/YKb19X3qgWCjnnre/whatever-you-like-your-website-to-be-1-Y4L8GDqaOpF2pDP8.gif"
+				alt="">
+			<img src="https://assets.zyrosite.com/YKb19X3qgWCjnnre/1-YKbaZyVM77F1qqqa.gif" alt="">
+		</div>
+	</div>
+
+	<!-- Blog Container -->
+	<h1 style="width: 1200px; margin: auto; text-align: center; margin-top:120px ;margin-bottom: -80px ; color: white;">
+		Beyond Boundaries Discover latest blogs</h1>
+	<div id="blogContainer" class="blogs-container">
+		<main class="page-content">
+			<a href="blog.html?id=1" target="_blank" class="d_card">
+				<div class="content">
+					<p style="font-family: 'Poppins';" class="data-content">Unleash Creative Brilliance: 10 Tips for
+						Professional Web Design Mastery!
+					</p>
+				</div>
+				<div class="stay">
+					<p style="font-family: 'Poppins';" class="data-content">Unleash Creative Brilliance: 10 Tips for
+						Professional Web Design Mastery!
+					</p>
+				</div>
+			</a>
+			<a href="blog.html?id=2" target="_blank" class="d_card">
+				<div class="content">
+					<p style="font-family: 'Poppins'; font-size: 1.15rem;" class="data-content">Navigating Success: A
+						Guide to Crafting the Perfect Sales Funnel for
+						Your Website</p>
+				</div>
+				<div class="stay2">
+					<p style="font-family: 'Poppins'; font-size: 1.15rem;" class="data-content">Navigating Success: A
+						Guide to Crafting the Perfect Sales Funnel for
+						Your Website</p>
+				</div>
+			</a>
+			<a href="blog.html?id=3" target="_blank" class="d_card">
+				<div class="content">
+					<p style="font-family: 'Poppins'; font-size: 1.15rem;" class="data-content">Create Stunning Canva
+						Content with These Expert Tips for Unforgettable
+						Designs!</p>
+				</div>
+				<div class="stay2">
+					<p style="font-family: 'Poppins'; font-size: 1.15rem;" class="data-content">Create Stunning Canva
+						Content with These Expert Tips for Unforgettable
+						Designs!</p>
+				</div>
+			</a>
+			<a href="blog.html?id=4" target="_blank" class="d_card">
+				<div class="content">
+					<p style="font-family: 'Poppins'; font-size: 1.15rem;" class="data-content">Discover 10 Breathtaking
+						Restaurant Websites Redefining the Art of UI
+						Design!</p>
+				</div>
+				<div class="stay2">
+					<p style="font-family: 'Poppins'; font-size: 1.15rem;" class="data-content">Discover 10 Breathtaking
+						Restaurant Websites Redefining the Art of UI
+						Design!</p>
+				</div>
+			</a>
+			<a href="blog.html?id=5" target="_blank" class="d_card">
+				<div class="content">
+					<p style="font-family: 'Poppins'; font-size: 1.15rem;" class="data-content">Elevate Your Page
+						Ranking with 5 Proven Strategies!</p>
+				</div>
+				<div class="stay2">
+					<p style="font-family: 'Poppins'; font-size: 1.15rem;" class="data-content">Elevate Your Page
+						Ranking with 5 Proven Strategies!</p>
+				</div>
+			</a>
+		</main>
+	</div>
+
+
+	<!-- <div class="site__wrapper">
+		<div class="grid">
+			<div class="card" id="blog-1">
+				<div class="card__image">
+					<img src="" alt="">
+					<div class="card__overlay card__overlay--indigo">
+						<div class="card__overlay-content">
+							<a href="" class="card__title">Unlocking the Power of Your Website's Sales
+								Funnel</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div claass="grid">
+			<div class="card" id="blog-2">
+				<div class="card__image">
+					<img src="" alt="">
+					<div class="card__overlay card__overlay--indigo">
+						<div class="card__overlay-content">
+							<a href="" class="card__title">Deciphering the Sales Funnel: A Roadmap to
+								Success</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="grid">
+			<div class="card" id="blog-3">
+				<div class="card__image">
+					<img src="" alt="">
+					<div class="card__overlay card__overlay--indigo">
+						<div class="card__overlay-content">
+							<a href="" class="card__title">Navigating the Four Levels of the Conversion
+								Funnel</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="grid">
+			<div class="card" id="blog-4">
+				<div class="card__image">
+					<img src="" alt="">
+					<div class="card__overlay card__overlay--indigo">
+						<div class="card__overlay-content">
+							<a href="" class="card__title">Navigating the UI/UX Design Landscape: Trends and
+								Innovations</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="grid">
+			<div class="card" id="blog-5">
+				<div class="card__image">
+					<img src="" alt="">
+					<div class="card__overlay card__overlay--indigo">
+						<div class="card__overlay-content">
+							<a href="" class="card__title">SEO Demystified: Techniques to Boost Your Online
+								Visibility</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+
+	<!-- Services -->
+	<section id="services" class="service-container">
+		<div class="spacer"></div>
+		<h1 style="width: 100%; text-align: center; margin-top: -15rem ; margin-bottom:50px ;"> What we
+			serve?</h1>
+		<div class="gallery">
+			<div class="left">
+				<div class="desktopContent">
+					<div class="desktopContentSection">
+						<h1>UI/UX Design</h1>
+						<h2>Elevate user experiences through our expert UI/UX design services. We craft
+							interfaces that resonate with your audience, ensuring a seamless and visually
+							engaging digital journey.</h2>
+					</div>
+					<div class="desktopContentSection">
+						<h1>Website Development</h1>
+						<h2>Transform your online presence with our cutting-edge website development. We
+							specialize in crafting dynamic and responsive websites and whether you need an
+							ecommerce platform or a dynamic website, we bring your vision to life with
+							precision and innovation. (HTML, CSS, JavaScript, Webflow, WordPress and more.)
+						</h2>
+					</div>
+					<div class="desktopContentSection">
+						<h1>SEO</h1>
+						<h2>In the vast digital landscape, being found is key to success. Our SEO services
+							ensure your website ranks #1 on search engines, connecting your business with
+							those actively seeking your products or services.</h2>
+					</div>
+					<div class="desktopContentSection">
+						<h1>Content Creation</h1>
+						<h2>Unleash your brand's creativity with our versatile content creation services.
+							From compelling copy to striking visuals, we bring your brand story to life with
+							authenticity and impact.</h2>
+					</div>
+				</div>
+			</div>
+
+			<div class="right">
+				<div class="desktopPhotos">
+					<div class="desktopPhoto">
+						<img src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708349502/index/1_m0o9id.webp" alt="">
+					</div>
+					<div class="desktopPhoto">
+						<img src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708349504/index/2_cydz37.webp" alt="">
+					</div>
+					<div class="desktopPhoto">
+						<img src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708349508/index/3_pvcmog.webp" alt="">
+					</div>
+					<div class="desktopPhoto">
+						<img src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708349528/index/4_rctmf6.gif" alt="">
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- Faq Container -->
+	<div class="faq-container" id="FAQ" style="margin-top: 15rem;">
+		<div class="faq-img">
+			<img class="faq-img-right" src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708348649/index/img2_frpshz.webp" alt="">
+			<img class="faq-img-left" src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708348653/index/img4_uzlo24.webp" alt="">
+		</div>
+		<h1 class="faq-heading">FAQs</h1>
+
+		<div class="faq-container">
+			<div class="faq-drawer">
+				<input class="faq-drawer__trigger" id="faq-drawer-1" type="checkbox" /><label class="faq-drawer__title"
+					for="faq-drawer-1">How fast will I receive my deliverables?</label>
+				<div class="faq-drawer__content-wrapper">
+					<div class="faq-drawer__content">
+						<p>
+							For Fullstack website work, expect delivery within 5-7 days. Urgent projects can be
+							accommodated in 3-4 days. Other design work typically takes 2-5 days.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="faq-drawer">
+				<input class="faq-drawer__trigger" id="faq-drawer-2" type="checkbox" /><label class="faq-drawer__title"
+					for="faq-drawer-2">Who are the designers/coders?</label>
+				<div class="faq-drawer__content-wrapper">
+					<div class="faq-drawer__content">
+						<p>
+							Our global team consists of experienced designers working behind the scenes. They are
+							the
+							talented individuals shaping the creative landscape at contentguy.co.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="faq-drawer">
+				<input class="faq-drawer__trigger" id="faq-drawer-3" type="checkbox" /><label class="faq-drawer__title"
+					for="faq-drawer-3">What if I don't like the work?</label>
+				<div class="faq-drawer__content-wrapper">
+					<div class="faq-drawer__content">
+						<p>
+							No worries! We prioritize your satisfaction. We'll continue revising the design until it
+							aligns perfectly with your vision.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="faq-drawer">
+				<input class="faq-drawer__trigger" id="faq-drawer-4" type="checkbox" /><label class="faq-drawer__title"
+					for="faq-drawer-4">What programs do you Work in?</label>
+				<div class="faq-drawer__content-wrapper">
+					<div class="faq-drawer__content">
+						<p>
+							For visual design, we work extensively in the Adobe Suite. Additionally, we specialize
+							in
+							UI/UX and web development, using programming languages and platforms such as Shopify,
+							Wix,
+							WordPress, Webflow, and more.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="faq-drawer">
+				<input class="faq-drawer__trigger" id="faq-drawer-5" type="checkbox" />
+				<label class="faq-drawer__title" for="faq-drawer-5">Are there any refunds if I don't like the
+					service?</label>
+				<div class="faq-drawer__content-wrapper">
+					<div class="faq-drawer__content">
+						<p>
+							We're committed to your satisfaction. If, for any reason, you decide not to continue, we
+							offer refunds to ensure your experience with us is positive.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="faq-drawer">
+				<input class="faq-drawer__trigger" id="faq-drawer-6" type="checkbox" /><label class="faq-drawer__title"
+					for="faq-drawer-6">Where are you based?</label>
+				<div class="faq-drawer__content-wrapper">
+					<div class="faq-drawer__content">
+						<p>
+							We operate with a lean team of 15, registered in California. Our operations extend to
+							Bangladesh, where we have additional operational offices.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="faq-drawer">
+				<input class="faq-drawer__trigger" id="faq-drawer-7" type="checkbox" /><label class="faq-drawer__title"
+					for="faq-drawer-7">What separates Contentguy.co from the rest?</label>
+				<div class="faq-drawer__content-wrapper">
+					<div class="faq-drawer__content">
+						<p>
+							In a sea of exceptional UX design and branding agencies, Contentguy.co sets itself apart
+							with a unique blend of client-centricity, expertise, and a dedication to visual excellence.
+							<br>
+							<br>
+							At Contentguy.co, our unique approach ensures that each project is personally overseen by
+							one of our co-founders, guaranteeing a level of dedication and expertise that sets us apart.
+							<br>
+							<br>
+							We differentiate ourselves by seamlessly integrating branding and product expertise into our
+							services. With cross-disciplinary teams dedicated to each project, we ensure that your app
+							or website not only reflects your brand essence but also provides an unparalleled user
+							experience.
+							<br>
+							<br>
+							As visual marketers first and foremost, we excel in marrying marketing strategy with visual
+							allure. This specialization allows us to carve out a niche where marketing and visual
+							excellence converge seamlessly, elevating your brand's presence and impact.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="faq-drawer">
+				<input class="faq-drawer__trigger" id="faq-drawer-8" type="checkbox" /><label class="faq-drawer__title"
+					for="faq-drawer-8">Do you work with clients in different timezone?</label>
+				<div class="faq-drawer__content-wrapper">
+					<div class="faq-drawer__content">
+						<p>
+							Most of our clients are in different timezones. With clients spanning across diverse time
+							zones, we've fine-tuned our remote collaboration model over the past 3 years. Based in San
+							Francisco, our remote-first setup extends across the United States, Europe, and South-East
+							Asia. This global footprint enables us to cater to clients worldwide, with offices
+							strategically located in two time zones. We've mastered effective communication and project
+							management strategies to seamlessly navigate the challenges presented by varying time zones,
+							ensuring smooth interactions with clients from Saudi Arabia, China, Australia, Germany, the
+							UK, and beyond.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="faq-drawer">
+				<input class="faq-drawer__trigger" id="faq-drawer-9" type="checkbox" /><label class="faq-drawer__title"
+					for="faq-drawer-9">How much for Hiring you for a work?</label>
+				<div class="faq-drawer__content-wrapper">
+					<div class="faq-drawer__content">
+						<p>
+							At Contentguy.co, we prioritize flexibility and affordability for our clients. Offering a
+							variety of engagement models including time & materials, fixed fee, and retainer options, we
+							tailor our services to fit your budgetary needs. Our pricing is designed to be lower than
+							local rates, with simple landing pages starting as low as $300 and more complex projects
+							ranging up to $4000. After initial discussions and project briefings, we'll recommend the
+							most suitable model for your requirements and provide a customized proposal outlining
+							timelines and estimated costs. Our goal is to deliver top-notch solutions that meet your
+							needs without breaking the bank.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="faq-drawer">
+				<input class="faq-drawer__trigger" id="faq-drawer-10" type="checkbox" /><label class="faq-drawer__title"
+					for="faq-drawer-10">Do you work with Startups? </label>
+				<div class="faq-drawer__content-wrapper">
+					<div class="faq-drawer__content">
+						<p>
+							Yes, we work with clients of all sizes, from enterprise-level organizations to startups. We
+							are passionate about helping startups bring their ideas to life and achieve their goals
+							through the power of design and technology. Additionally, we possess the expertise to assist
+							in scaling your product or marketing efforts to enter new markets or reach different target
+							audiences. <br> <br>
+							If you are a startup seeking to discuss your project needs, we would be delighted to
+							initiate the conversation. To schedule a consultation with our team, please get in touch
+							with us at rehnuma@contentguy.col. We will work closely with you to comprehend your vision,
+							goals, and budget, ensuring a tailored approach to your project.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="footer-div">
+		<div id="innerDiv" class="innerDiv">
+			<h1 id="footer-h1">Is ContentGuys your jam? (Spoiler: It's gonna be!) <br>🎉</h1>
+			<h2 id="footer-h2">Dive into a whirlwind tour with ContentGuys and discover how you and your squad can
+				revolutionize your website game. Leaving all competetors behind!</h2>
+			<button id="burger-open" class="openModalButton4">Drop us a line</button>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="footer-distributed">
+
+		<div class="footer-left">
+
+			<img src="./images2/contentguy.png" alt="">
+
+			<p
+				style="margin-left: 0.9rem; color: #ffffff;font-weight: 200; font-family: poppins; margin-top: 1rem; width: 80%;">
+				Formerly a marketing agency, we now specialize in crafting tailored digital solutions for
+				businesses, leveraging
+				our deep understanding of their needs.
+			</p>
+			<div style="margin-left: 0.8rem ;" class="footermain">
+				<a href="https://www.facebook.com/rougexasia" class="nav-item">
+					<div class="nav-links transition-all">
+						<i class="fab fa-facebook"></i>
+					</div>
+				</a>
+				<a href="https://www.instagram.com/rougexasia" class="nav-item">
+					<div class="nav-links">
+						<i class="fab fa-instagram"></i>
+					</div>
+				</a>
+				<a href="https://www.linkedin.com/company/96609143" class="nav-item">
+					<div class="nav-links transition-all">
+						<i class="fab fa-linkedin-in"></i>
+					</div>
+				</a>
+			</div>
+		</div>
+
+		<div class="footer-center">
+
+			<div>
+				<span style="font-weight: 600; color: #ffffff;">California Office</span> <br>
+				<p style="font-weight: 200; font-family: poppins; font-size: 14px;">123 Orchard Park Cir Davis,<br>
+					CA 95616,
+					USA</p>
+			</div>
+			<div style="margin-top: 1rem;">
+				<span style="font-weight: 600; color: #ffffff;">Dhaka Office</span> <br>
+				<p style="font-weight: 200; font-family: poppins; font-size: 14px;">136, Kalachadpur, North
+					Baridhara,<br> Dhaka
+					1206, Bangladesh</p>
+			</div>
+
+			<div style="margin-top: 1rem;">
+				<span style="font-weight: 600; color: #ffffff;">Contacts</span> <br>
+				<p style="font-weight: 200;margin-top: 0.5rem; font-family: poppins; font-size: 14px;">
+					+1 (408) 333-4849
+					ridwan@xrougex.com
+				</p>
+				<p style="font-weight: 200;margin-top: 0.5rem; font-family: poppins; font-size: 14px;">
+					+8801614395930
+					rehnuma@contentguy.co
+				</p>
+			</div>
+		</div>
+		<div class="footer-right">
+			<div class="col-xs-6 col-md-3">
+				<span style="font-weight: 600; color: #ffffff;">Quick Links</span>
+				<ul class="right-footer-links">
+					<li><a href="./index.html">Home</a></li>
+					<li><a href="#blogContainer">Blogs</a></li>
+					<li><a href="#about">About Us</a></li>
+					<li>
+						<p style="margin: 0; padding: 0; margin-left: -4px;" id="burger-open">Contact</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<img class="footer-img-bottom" src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708348650/index/img3_eytqro.webp" alt="">
+	</footer>
+
+	<p
+		style="color: #ffffff;font-weight: 200; font-family: poppins; width: 100%; text-align: center; margin-top: 4rem;">
+		© 2024 Contentguy.co. All rights reserved.</p>
+
+
+
+	<!-- Gsap -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+		integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+		integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<script>
+		function setupScrollAnimations() {
+			const details = gsap.utils.toArray(".desktopContentSection:not(:first-child)");
+			const photos = gsap.utils.toArray(".desktopPhoto:not(:first-child)");
+
+			gsap.set(photos, { yPercent: 101 });
+
+			const allPhotos = gsap.utils.toArray(".desktopPhoto");
+
+			let mm = gsap.matchMedia();
+
+			mm.add("(min-width: 600px)", () => {
+				console.log("desktop");
+
+				ScrollTrigger.create({
+					trigger: ".gallery",
+					start: "top top",
+					end: "bottom bottom",
+					pin: ".right"
+				});
+
+				details.forEach((detail, index) => {
+					let headline = detail.querySelector("h1");
+					let animation = gsap.timeline()
+						.to(photos[index], { yPercent: 0 })
+						.set(allPhotos[index], { autoAlpha: 0 });
+
+					ScrollTrigger.create({
+						trigger: headline,
+						start: "top 80%",
+						end: "top 30%",
+						animation: animation,
+						scrub: 2,
+						markers: false
+					});
+				});
+
+				return () => {
+					console.log("mobile");
+				};
+			});
+		}
+
+		document.addEventListener("DOMContentLoaded", function () {
+			setupScrollAnimations();
+		});
+	</script>
+
+	<script>
+		const swiperContainer = document.querySelector('.myySwiper');
+		swiperContainer.addEventListener('mousemove', function (event) {
+			const swiperWidth = swiperContainer.offsetWidth;
+			const threshold = 300;
+			const mouseX = event.clientX - swiperContainer.getBoundingClientRect().left;
+			if (mouseX >= swiperWidth - threshold) {
+				swiperContainer.scrollLeft += 10;
+			}
+			if (mouseX <= threshold) {
+				swiperContainer.scrollLeft -= 10;
+			}
+		});
+	</script>
+
+	<!-- locomotive js -->
+
+	<!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const locoScroll = new LocomotiveScroll({
+				el: document.querySelector("#main"),
+				smooth: true
+			});
+		});
+	</script> -->
+	<script src="script.js"></script>
+	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+	<!-- Swiper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+	<!-- Initialize Swiper -->
+	<script>
+		var swiper = new Swiper(".mySwiper", {
+			slidesPerView: 1,
+			spaceBetween: 30,
+			loop: true,
+			autoplay: {
+				delay: 1500,
+				disableOnInteraction: false,
+			},
+		});
+	</script>
+
+	<script>
+		var swiper = new Swiper(".myySwiper", {
+			slidesPerView: 3,
+			centeredSlides: true,
+			spaceBetween: 10,
+		});
+
+	</script>
+	<!-- email service -->
+	<!-- SweetAlert2 JS -->
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+</body>
+
+</html>
