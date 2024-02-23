@@ -28,22 +28,98 @@ function isElementInViewport(el) {
 }
 
 // Function to play background music when the element is in view
-function handleScroll(sectionId) {
-	const section = document.getElementById(sectionId);
-	const backgroundMusic = document.getElementById("background-music");
+// function handleScroll(sectionId) {
+// 	const section = document.getElementById(sectionId);
+// 	const backgroundMusic = document.getElementById("background-music");
+// 	const backgroundMusic1 = document.getElementById("background-music1");
+// 	const backgroundMusic2 = document.getElementById("background-music2");
+// 	const backgroundMusic3 = document.getElementById("background-music3");
+// 	const backgroundMusic4 = document.getElementById("background-music0");
 
-	if (isElementInViewport(section)) {
-		backgroundMusic.play();
-	} else {
-		backgroundMusic.pause();
-	}
+// 	// Check if the current section is in the viewport
+// 	if (isElementInViewport(section)) {
+// 		// Pause all audio elements
+// 		pauseAllAudio();
+
+// 		// Play audio associated with the current section
+// 		switch (sectionId) {
+// 			case "herohero":
+// 				backgroundMusic.play();
+// 				break;
+// 			case "casecase":
+// 				backgroundMusic1.play();
+// 				break;
+// 			case "services":
+// 				backgroundMusic2.play();
+// 				break;
+// 			case "footer-div":
+// 				backgroundMusic3.play();
+// 				break;
+// 			case "recent-works":
+// 				backgroundMusic4.play();
+// 				break;
+// 		}
+// 	} else {
+// 		pauseAllAudio();
+// 	}
+// }
+
+// function pauseAllAudio() {
+// 	const audioElements = document.querySelectorAll("audio");
+// 	audioElements.forEach(audio => {
+// 		audio.pause();
+// 	});
+// }
+
+// window.addEventListener('scroll', function () {
+// 	handleScroll("herohero");
+// 	handleScroll("casecase");
+// 	handleScroll("services");
+// 	handleScroll("footer-div");
+// 	handleScroll("recent-works");
+// });
+
+// Function to handle scroll events and play/pause audio accordingly
+function handleScroll() {
+    // Get all sections
+    const sections = document.querySelectorAll('section');
+
+    // Iterate over each section
+    sections.forEach(section => {
+        // Check if the section is in the viewport
+        if (isElementInViewport(section)) {
+            // Pause all audio elements except the one associated with the current section
+            pauseAllAudio();
+
+            // Play audio associated with the current section
+            switch (section.id) {
+                case "herohero":
+                    document.getElementById('background-music').play();
+                    break;
+                case "casecase":
+                    document.getElementById('background-music1').play();
+                    break;
+                case "services":
+                    document.getElementById('background-music2').play();
+                    break;
+                case "recent-works":
+                    document.getElementById('background-music0').play();
+                    break;
+                case "footer-div":
+                    document.getElementById('background-music3').play();
+                    break;
+            }
+        }
+    });
 }
 
-window.addEventListener('scroll', function () {
-	handleScroll("herohero");
-	handleScroll("casecase");
-	handleScroll("recent-works");
-});
+// Add scroll event listener to call handleScroll function
+window.addEventListener('scroll', handleScroll);
+
+// Call handleScroll initially to check audio playback on page load
+handleScroll();
+
+
 
 
 // Set up an Intersection Observer to trigger the function on scroll

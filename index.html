@@ -5,13 +5,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="images2/contentguy.webp" type="image/png">
-    
-    <meta property="og:url" content="https://www.contentguy.co/" />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Content Guy - Web Design Agency" />
-<meta property="og:description" content="A Web Design agency providing Web design and development as well as apps for businesses internationally. Rank #1 on Google with our SEO." />
-<meta property="og:image" content="images2/contentguy.webp" />
-
 	<title>Contentguy</title>
 	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet" href="mobile-styles.css" media="screen and (max-width: 770px)">
@@ -19,8 +12,6 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 	<!-- font-awesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <!-- Canonical tag -->
-    <link rel="canonical" href="https://www.contentguy.co">
 	<!-- Swipper Js -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 	<!-- Locomotive Js -->
@@ -42,9 +33,10 @@
 	<!-- SweetAlert2 JS -->
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     
-    <meta name="description" content="ContentGuy.co is your premier destination for expert web design and development services, delivering cutting-edge websites and customized apps for businesses worldwide. Elevate your online presence with our internationally acclaimed solutions. Rank #1 on Google with our SEO expertise.">
-
-<!-- Google tag (gtag.js) -->
+    <!-- Canonical tag -->
+    <link rel="canonical" href="https://www.contentguy.co">
+    
+    <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-K5L0936EN7"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -54,7 +46,9 @@
   gtag('config', 'G-K5L0936EN7');
 </script>
     
-    
+      <!-- Meta Decription -->
+      <meta name="description" content="ContentGuy.co is a webagency for expert web design and app development services, delivering cutting-edge technology with the most modern designs.">
+
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -92,30 +86,19 @@
   "description": "A Web Design agency providing Web design and development as well as apps for businesses internationally. Rank #1 on Google with our SEO."
 }
 </script>
-
+    
 </head>
 
 <body>
-	<div class="read-progression" id="scroll-progress"></div>
-	<audio id="background-music" autoplay loop>
-		<source src="./portfolio/audio.mp3" type="audio/mp3">
-	</audio>
 	<div class="cursor-dot" data-cursor-dot></div>
-	<div class="header">
-		<img src="images2/contentguy.webp" alt="top-image" class="top-image" id="reload-image">
-		<div id="menu" class="menu-toggle">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-	</div>
+
 	<div id="navbar-mobile" class="navbar-mobile">
 		<ul>
 			<li class="arrow"><a href="#"></a></li>
 			<li><a href="#about">About Us</a></li>
 			<li><a href="#recent-works">Recent Work</a></li>
-			<li><a href="#services">Service</a></li>
-			<li><a href="#blogContainer">Blogs</a></li>
+			<li><a href="#servicess">Service</a></li>
+			<li><a href="#blogContainerr">Blogs</a></li>
 			<li><a href="#FAQ">FAQs</a></li>
 		</ul>
 	</div>
@@ -132,7 +115,7 @@
 	</div>
 
 	<!-- sidebar -->
-	<header class="sidebar-menu">
+	<div class="sidebar-menu">
 		<img id="burger-open" class="open-modal" src="./images2/buttons/open.png" alt="Open Menu">
 		<nav id="meny">
 			<form class="main-container">
@@ -170,11 +153,21 @@
 				</div>
 			</form>
 		</nav>
-	</header>
+	</div>
 
+	<div class="read-progression" id="scroll-progress"></div>
+	<div id="herohero" class="header">
+		<img src="images2/contentguy.webp" alt="top-image" class="top-image" id="reload-image">
+		<div id="menu" class="menu-toggle">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
 	<!-- Hero -->
-	<div id="herohero" class="hero">
-		<img src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708348695/index/banner1_mmlm64.webp" alt="Left Image" class="left-image">
+	<section class="hero">
+		<img src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708348695/index/banner1_mmlm64.webp"
+			alt="Left Image" class="left-image">
 		<div class="contentt">
 			<h1>The web agency that's shaking things up.
 			</h1>
@@ -183,8 +176,9 @@
 			<h5>Design and develop <span class="love">&#x1F496;</span>almost anything, </h5>
 
 		</div>
-		<img src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708348697/index/banner2_qarvdc.webp" alt="Right Image" class="right-image">
-	</div>
+		<img src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708348697/index/banner2_qarvdc.webp"
+			alt="Right Image" class="right-image">
+	</section>
 
 	<!-- Projects -->
 	<div class="projects">
@@ -210,7 +204,7 @@
 	<div class="white-container">
 		<div class="column">
 			<h2>
-				Website Development and Design subscriptions to scale your business
+				Website Development and Design services to scale your business
 			</h2>
 			<p>Old-school designs? Nah, we're the new cool kids on the block!</p>
 		</div>
@@ -245,14 +239,15 @@
 
 		<div id="about" class="pink-column">
 			<div class="pink-column-img">
-				<img class="pink-column-left" src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708348655/index/pcl_ahrl6i.webp" alt="">
+				<img class="pink-column-left"
+					src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708348655/index/pcl_ahrl6i.webp" alt="">
 				<img class="pink-column-right"
 					src="https://assets.website-files.com/5837424ae11409586f837994/6119d9897e15e38d7e0c8bea_52.svg"
 					alt="">
 			</div>
 			<img src="https://assets.website-files.com/5837424ae11409586f837994/6119d7a83723f6d0114590ab_quotation.svg"
 				alt="">
-			<h3 style="font-size: 30px;">Originating as a marketing agency, we dared to step into the saturated
+			<h3 class="origin">Originating as a marketing agency, we dared to step into the saturated
 				web
 				design market. Recognizing a gap, we observed agencies offering web services without truly
 				grasping
@@ -263,18 +258,23 @@
 
 		<div class="blue-container-wraper">
 			<div class="blue-img-holder">
-				<img class="blue-container-right" src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708348704/index/blr_zgcpaq.webp" alt="">
+				<img class="blue-container-right"
+					src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708348704/index/blr_zgcpaq.webp" alt="">
 				<img class="blue-container-middle"
 					src="https://assets.website-files.com/5837424ae11409586f837994/6119d83a539ea14de7db7bac_Group%2022.svg"
 					alt="">
-				<img class="blue-container-left" src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708348703/index/bll_kogvw4.webp" alt="">
+				<img class="blue-container-left"
+					src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708348703/index/bll_kogvw4.webp" alt="">
+				<img class="blue-container-bottom"
+					src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708348648/index/img1_akkjo7.webp" alt="">
 			</div>
 			<div class="blue-container">
-				<img style="position: absolute;left: 30% ; top: 80px;"
+				<img class="blue-img"
 					src="https://assets.website-files.com/5837424ae11409586f837994/6119d7a83723f6d0114590ab_quotation.svg"
 					alt="">
-				<h1>Great design isn't just a king; it's the life of the online party! </h1>
-				<h2>Your website's design, coupled with effective SEO, has the power to transform everything.
+				<h1 class="blueh1">Maximize Web Design and Development with our Fullstack services! </h1>
+				<h2 class="blueh2">Your website's design, coupled with effective SEO, has the power to transform
+					everything.
 					It's
 					not just about looking good; it's about making an impact, capturing attention, and driving
 					results
@@ -445,15 +445,15 @@
 	</div>
 
 	<!-- review section -->
-	<h1 style="margin-top: 100px; color: white; text-align: center ; font-family: 'Poppins'; margin-bottom: -30px;">
+	<h1 class="review-head">
 		THOUGHTS FROM OUR CLIENTS
 	</h1>
 
 	<!-- Swiper -->
 	<div class="swiper slider-container mySwiper">
 		<div class="swiper-wrapper">
-			<div class="swiper-slide">
-				<div style="padding: 10% 7% 10% 10%;">
+			<div class="swiper-slide slideWrap">
+				<div class="slide">
 					<img class="top-coma"
 						src="https://assets.website-files.com/5837424ae11409586f837994/6119d7a83723f6d0114590ab_quotation.svg"
 						alt="">
@@ -470,9 +470,8 @@
 				</div>
 			</div>
 
-		
-			<div class="swiper-slide">
-				<div style="padding: 10% 7% 10% 10%;">
+			<div class="swiper-slide slideWrap">
+				<div class="slide">
 					<img class="top-coma"
 						src="https://assets.website-files.com/5837424ae11409586f837994/6119d7a83723f6d0114590ab_quotation.svg"
 						alt="">
@@ -488,8 +487,8 @@
 				</div>
 			</div>
 
-			<div class="swiper-slide">
-				<div style="padding: 10% 7% 10% 10%;">
+			<div class="swiper-slide slideWrap">
+				<div class="slide">
 					<img class="top-coma"
 						src="https://assets.website-files.com/5837424ae11409586f837994/6119d7a83723f6d0114590ab_quotation.svg"
 						alt="">
@@ -509,7 +508,7 @@
 	</div>
 
 	<!-- case study section -->
-	<div id="casecase" class="case-study">
+	<section id="casecase" class="case-study">
 		<div style="color: white;" class="caseContainer">
 			<h1>Case</h1>
 			<h2>Studies</h2>
@@ -535,7 +534,39 @@
 				</a>
 			</div>
 		</div>
+	</section>
+
+
+	<!-- case study section for mobile -->
+	<div class="case-studyy">
+		<div>
+			<h1>Case</h1>
+			<h2>Studies</h2>
+			<button id="burger-open" class="btnnn btnnn-1 btnnn-1a">Free Consultation</button>
+		</div>
+		<div class="swiperr myySwiper">
+			<div class="swiper-wrapper caseSlider">
+				<a href="./case.html" target="_blank" class="swiper-slide swiperr-slide">
+					<img src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708263099/1_iy65dd.webp" alt="">
+					<div style="color: white; font-weight: 600; font-family: 'Poppins';" class="popup">Click</div>
+				</a>
+				<a href="./case3.html" target="_blank" class="swiper-slide swiperr-slide">
+					<img src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708263099/2_zkl32w.webp" alt="">
+					<div style="color: white; font-weight: 600; font-family: 'Poppins';" class="popup">Click</div>
+				</a>
+				<a href="./case2.html" target="_blank" class="swiper-slide swiperr-slide">
+					<img src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708263099/3_wb1bir.webp" alt="">
+					<div style="color: white; font-weight: 600; font-family: 'Poppins';" class="popup">Click</div>
+				</a>
+				<a href="./case4.html" target="_blank" class="swiper-slide swiperr-slide">
+					<img src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708263099/4_xhg7xo.webp" alt="">
+					<div style="color: white; font-weight: 600; font-family: 'Poppins';" class="popup">Click</div>
+				</a>
+			</div>
+		</div>
 	</div>
+
+
 	<!-- Marquee section -->
 	<div style="margin-top: 4rem; color: white;" class="Marquee-section">
 		<div id="marqueeee">
@@ -1157,7 +1188,7 @@
 			src="https://assets.website-files.com/5837424ae11409586f837994/611a9e387d080fa68df0f888_Group%2048.svg"
 			alt="">
 		<h2>Offload your troubles</h2>
-		<h3>We help business and startups by create their dream websites and Apps.</h3>
+		<h3>We help business and startups by create their dream websites and Apps</h3>
 		<button id="burger-open" class="cta-button">Book Consultation</button>
 		<div class="six-grid">
 			<div class="grid-element">
@@ -1183,7 +1214,7 @@
 					src="https://assets.website-files.com/5837424ae11409586f837994/5e18c7197df12e9d9354f23a_data.json"
 					background speed="1" style="width: 100px; height: 100px" direction="1" mode="normal" loop
 					autoplay></lottie-player>
-				<h3>Sound Brading 🌟</h3>
+				<h3>Sound Branding 🌟</h3>
 				<p>Our Branding experts are keen to make our work pitch perfectly with you business and
 					Image.
 				</p>
@@ -1207,7 +1238,8 @@
 			<img class="recent-works-img-top"
 				src="https://assets.website-files.com/5837424ae11409586f837994/6119d83a539ea14de7db7bac_Group%2022.svg"
 				alt="">
-			<img class="recent-works-img-top-right" src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708348692/index/rwitr_etukwy.webp" alt="">
+			<img class="recent-works-img-top-right"
+				src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708348692/index/rwitr_etukwy.webp" alt="">
 
 			<h1>Recent Works</h1>
 			<h2>Award winning designs, and nothing less</h2>
@@ -1217,17 +1249,16 @@
 						Portfolio</button></a>
 			</div>
 		</div>
+
 		<div class="projects-grid">
 			<img src="https://assets.zyrosite.com/YKb19X3qgWCjnnre/whatever-you-like-your-website-to-be-1-Y4L8GDqaOpF2pDP8.gif"
 				alt="">
-			<img src="https://assets.zyrosite.com/YKb19X3qgWCjnnre/1-YKbaZyVM77F1qqqa.gif" alt="">
+			<img src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708602379/1-YKbaZyVM77F1qqqa_efepqq.gif" alt="">
 		</div>
 	</div>
 
-
 	<!-- Blog Container -->
-	<h1 style="width: 1200px; margin: auto; text-align: center; margin-top:120px ;margin-bottom: -80px ; color: white;">
-		Beyond Boundaries Discover latest blogs</h1>
+	<h1 class="blog-head">Beyond Boundaries Discover latest blogs</h1>
 	<div id="blogContainer" class="blogs-container">
 		<main class="page-content">
 			<a href="blog.html?id=1" target="_blank" class="d_card">
@@ -1290,77 +1321,19 @@
 			</a>
 		</main>
 	</div>
-
-
-	<!-- <div class="site__wrapper">
-		<div class="grid">
-			<div class="card" id="blog-1">
-				<div class="card__image">
-					<img src="" alt="">
-					<div class="card__overlay card__overlay--indigo">
-						<div class="card__overlay-content">
-							<a href="" class="card__title">Unlocking the Power of Your Website's Sales
-								Funnel</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div claass="grid">
-			<div class="card" id="blog-2">
-				<div class="card__image">
-					<img src="" alt="">
-					<div class="card__overlay card__overlay--indigo">
-						<div class="card__overlay-content">
-							<a href="" class="card__title">Deciphering the Sales Funnel: A Roadmap to
-								Success</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="grid">
-			<div class="card" id="blog-3">
-				<div class="card__image">
-					<img src="" alt="">
-					<div class="card__overlay card__overlay--indigo">
-						<div class="card__overlay-content">
-							<a href="" class="card__title">Navigating the Four Levels of the Conversion
-								Funnel</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="grid">
-			<div class="card" id="blog-4">
-				<div class="card__image">
-					<img src="" alt="">
-					<div class="card__overlay card__overlay--indigo">
-						<div class="card__overlay-content">
-							<a href="" class="card__title">Navigating the UI/UX Design Landscape: Trends and
-								Innovations</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="grid">
-			<div class="card" id="blog-5">
-				<div class="card__image">
-					<img src="" alt="">
-					<div class="card__overlay card__overlay--indigo">
-						<div class="card__overlay-content">
-							<a href="" class="card__title">SEO Demystified: Techniques to Boost Your Online
-								Visibility</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> -->
-
-
+	<!-- Blog Container for mobile-->
+	<h1 class="blogHead">Beyond Boundaries Discover latest blogs</h1>
+	<ul id="blogContainerr" class="auto-grid">
+		<li><a href="blog.html?id=1" target="_blank">Unleash Creative Brilliance: 10 Tips for Professional Web Design
+				Mastery!</a></li>
+		<li><a href="blog.html?id=2" target="_blank">Navigating Success: A Guide to Crafting the Perfect Sales Funnel
+				for Your Website</a></li>
+		<li><a href="blog.html?id=4" target="_blank">Create Stunning Canva Content with These Expert Tips for
+				Unforgettable Designs!</a></li>
+		<li><a href="blog.html?id=4" target="_blank">Discover 10 Breathtaking Restaurant Websites Redefining the Art of
+				UI Design!</a></li>
+		<li><a href="blog.html?id=5" target="_blank">Elevate Your Page Ranking with 5 Proven Strategies!</a></li>
+	</ul>
 	<!-- Services -->
 	<section id="services" class="service-container">
 		<div class="spacer"></div>
@@ -1401,16 +1374,20 @@
 			<div class="right">
 				<div class="desktopPhotos">
 					<div class="desktopPhoto">
-						<img src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708349502/index/1_m0o9id.webp" alt="">
+						<img src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708349502/index/1_m0o9id.webp"
+							alt="">
 					</div>
 					<div class="desktopPhoto">
-						<img src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708349504/index/HTML%2C%20Webflow%20and%20Coding%2C%20Wireframe%2C%20webflow%2C%20css.webp" alt="">
+						<img src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708349504/index/HTML%2C%20Webflow%20and%20Coding%2C%20Wireframe%2C%20webflow%2C%20css.webp"
+							alt="">
 					</div>
 					<div class="desktopPhoto">
-						<img src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708518395/index/Our%20Services%20Include%20SEO%20to%20Rank%20you%20%20number%201%20on%20google.png" alt="">
+						<img src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708349508/index/3_pvcmog.webp"
+							alt="">
 					</div>
 					<div class="desktopPhoto">
-						<img src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708349528/index/4_rctmf6.gif" alt="">
+						<img src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708349528/index/4_rctmf6.gif"
+							alt="">
 					</div>
 				</div>
 			</div>
@@ -1418,11 +1395,46 @@
 		</div>
 	</section>
 
+	<!-- Services Mobile-->
+	<div id="servicess" class="mov-serv">
+		<div>
+			<p>What we serve?</p>
+		</div>
+		<div>
+			<div class="swiper myyySwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img class="imggg" src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708349528/index/4_rctmf6.gif" alt=""><span>CONTENT
+							CREATION</span>
+						<p>Unleash your brand's creativity with our versatile content creation services. From compelling
+							copy to striking visuals, we bring your brand story to life with authenticity and impact.
+						</p>
+					</div>
+					<div class="swiper-slide"><img class="imggg" src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708349502/index/1_m0o9id.webp" alt=""><span>UI/UX DESIGN</span>
+						<p>Boost user experiences with our expert UI/UX design services. We craft captivating interfaces
+							for a seamless digital journey.</p>
+					</div>
+					<div class="swiper-slide"><img class="imggg" src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708349504/index/HTML%2C%20Webflow%20and%20Coding%2C%20Wireframe%2C%20webflow%2C%20css.webp" alt=""><span>WEB
+							DEVELOPMENT</span>
+						<p>Revamp your online presence with our dynamic website development. From <br> e-commerce platforms
+							to dynamic sites, we bring your vision to life with precision and innovation.</p>
+					</div>
+					<div class="swiper-slide"><img class="imggg" src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708349508/index/3_pvcmog.webp" alt=""><span>SEO</span>
+						<p>Drive online success with our SEO services. We guarantee top search rankings, connecting you
+							with eager customers.</p>
+					</div>
+				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+		</div>
+	</div>
 	<!-- Faq Container -->
 	<div class="faq-container" id="FAQ" style="margin-top: 15rem;">
 		<div class="faq-img">
-			<img class="faq-img-right" src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708348649/index/img2_frpshz.webp" alt="">
-			<img class="faq-img-left" src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708348653/index/img4_uzlo24.webp" alt="">
+			<img class="faq-img-right"
+				src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708348649/index/img2_frpshz.webp" alt="">
+			<img class="faq-img-left"
+				src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708348653/index/img4_uzlo24.webp" alt="">
 		</div>
 		<h1 class="faq-heading">FAQs</h1>
 
@@ -1590,17 +1602,28 @@
 
 	</div>
 
-	<div class="footer-div">
+	<section id="footer-div" class="footer-div">
 		<div id="innerDiv" class="innerDiv">
 			<h1 id="footer-h1">Is ContentGuys your jam? (Spoiler: It's gonna be!) <br>🎉</h1>
 			<h2 id="footer-h2">Dive into a whirlwind tour with ContentGuys and discover how you and your squad can
 				revolutionize your website game. Leaving all competetors behind!</h2>
 			<button id="burger-open" class="openModalButton4">Drop us a line</button>
 		</div>
+	</section>
+
+
+	<div class="footer-mobile-div">
+		<div class="">
+			<h1 id="foot-h1">Is ContentGuys your jam? (Spoiler: It's gonna be!) <br>🎉</h1>
+			<h2 id="foot-h2">Dive into a whirlwind tour with ContentGuys and discover how you and your squad can
+				revolutionize your website game. Leaving all competetors behind!</h2>
+			<button id="burger-open" class="openModalButton4">Drop us a line</button>
+		</div>
 	</div>
 
+
 	<!-- Footer -->
-	<footer class="footer-distributed">
+	<footer id="footer-distributed" class="footer-distributed">
 
 		<div class="footer-left">
 
@@ -1632,7 +1655,6 @@
 		</div>
 
 		<div class="footer-center">
-
 			<div>
 				<span style="font-weight: 600; color: #ffffff;">California Office</span> <br>
 				<p style="font-weight: 200; font-family: poppins; font-size: 14px;">123 Orchard Park Cir Davis,<br>
@@ -1671,15 +1693,105 @@
 				</ul>
 			</div>
 		</div>
-		<img class="footer-img-bottom" src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708348650/index/img3_eytqro.webp" alt="">
+		<img class="footer-img-bottom"
+			src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708348650/index/img3_eytqro.webp" alt="">
 	</footer>
 
-	<p
-		style="color: #ffffff;font-weight: 200; font-family: poppins; width: 100%; text-align: center; margin-top: 4rem;">
+	<div class="footerrr">
+		<div class="contain">
+			<div class="col col1">
+				<img class="fot-img" src="./images2/contentguy.png" alt="">
+				<p> Formerly a marketing agency, we now specialize in crafting tailored digital solutions for
+					businesses, leveraging our deep understanding of their needs. </p>
+				<div class="footermain">
+					<a href="https://www.facebook.com/rougexasia" class="nav-item">
+						<div class="nav-links transition-all">
+							<i class="fab fa-facebook"></i>
+						</div>
+					</a>
+					<a href="https://www.instagram.com/rougexasia" class="nav-item">
+						<div class="nav-links">
+							<i class="fab fa-instagram"></i>
+						</div>
+					</a>
+					<a href="https://www.linkedin.com/company/96609143" class="nav-item">
+						<div class="nav-links transition-all">
+							<i class="fab fa-linkedin-in"></i>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<h1>California Office</h1>
+			<ul>
+				<li style="font-size: 16px; font-weight: 300">123 Orchard Park Cir Davis,
+					<br> CA 95616, USA
+				</li>
+			</ul>
+		</div>
+		<div class="col">
+			<h1>Dhaka Office</h1>
+			<ul>
+				<li style="font-size: 16px; font-weight: 300">136, Kalachadpur, North Baridhara,
+					<br> Dhaka 1206, Bangladesh
+				</li>
+			</ul>
+		</div>
+		<div class="col">
+			<h1>Contacts</h1>
+			<ul>
+				<li style="font-size: 16px; font-weight: 300">ridwan@xrougex.com +1 (408) 333-4849 </li>
+				<li style="font-size: 16px; font-weight: 300">rehnuma@contentguy.co +8801614395930 </li>
+			</ul>
+		</div>
+		<div class="col">
+			<h1>Quick Links</h1>
+			<ul>
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="#blogContainer">Blogs</a></li>
+				<li><a href="#about">About Us</a></li>
+			</ul>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+
+
+
+	<p class="ending"
+		style="color: #ffffff;font-weight: 200; font-family: poppins; width: 100%; text-align: center; margin-top: 2rem;">
 		© 2024 Contentguy.co. All rights reserved.</p>
+	<img class="footerr-img-bottom"
+		src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1708348650/index/img3_eytqro.webp" alt="">
 
+	<audio id="background-music" autoplay loop>
+		<source src="./portfolio/hero.mp3" type="audio/mp3">
+	</audio>
+	<audio id="background-music0" autoplay loop>
+		<source src="./portfolio/1.mp3" type="audio/mp3">
+	</audio>
+	<audio id="background-music1" autoplay loop>
+		<source src="./portfolio/case.mp3" type="audio/mp3">
+	</audio>
+	<audio id="background-music2" autoplay loop>
+		<source src="./portfolio/service.mp3" type="audio/mp3">
+	</audio>
+	<audio id="background-music3" autoplay loop>
+		<source src="./portfolio/footer.mp3" type="audio/mp3">
+	</audio>
+	<audio id="background-music4" autoplay loop>
+		<source src="./portfolio/hero.mp3" type="audio/mp3">
+	</audio>
 
-
+	<script>
+		var swiper = new Swiper(".mySwiper", {
+			rewind: true,
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+		});
+	</script>
 	<!-- Gsap -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
 		integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
@@ -1788,9 +1900,89 @@
 		});
 
 	</script>
+
+	<script>
+		var swiper = new Swiper(".myyySwiper", {
+			rewind: true,
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+		});
+	</script>
 	<!-- email service -->
 	<!-- SweetAlert2 JS -->
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+	<script>
+		// Function to pause all audio elements
+		function pauseAllAudio() {
+			const audios = document.querySelectorAll('audio');
+			audios.forEach(audio => {
+				audio.pause();
+				audio.currentTime = 0; // Reset the playback to the beginning
+			});
+		}
+
+		// Function to play music for a specific section with a specified volume
+		function playMusic(audioId) {
+			const audio = document.getElementById(audioId);
+			audio.currentTime = 0; // Reset the playback to the beginning
+			audio.volume = 0.3; // Set the volume to 0.3
+			audio.play();
+
+			// Add event listener to reset and play the audio again when it finishes
+			audio.addEventListener('ended', function () {
+				audio.currentTime = 0; // Reset the playback to the beginning
+				audio.play();
+			});
+		}
+
+
+		function isInViewport(element) {
+			const rect = element.getBoundingClientRect();
+			return (
+				rect.top >= 0 &&
+				rect.left >= 0 &&
+				rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+				rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+			);
+		}
+
+		function handleScroll() {
+			sections.forEach(section => {
+				const sectionElement = document.getElementById(section);
+				if (isInViewport(sectionElement)) {
+					const audioId = audioMap[section];
+					playMusic(audioId);
+				} else {
+					const audioId = audioMap[section];
+					const audio = document.getElementById(audioId);
+					audio.pause();
+					audio.currentTime = 0;
+				}
+			});
+		}
+
+		const sections = ['herohero', 'casecase', 'services', 'recent-works', 'footer-distributed', 'innerDiv'];
+		const audioMap = {
+			'herohero': 'background-music',
+			'casecase': 'background-music1',
+			'services': 'background-music2',
+			'recent-works': 'background-music0',
+			'innerDiv': 'background-music3',
+			'footer-distributed': 'background-music4'
+		};
+
+		window.addEventListener('scroll', handleScroll);
+		window.addEventListener('resize', handleScroll);
+
+
+		pauseAllAudio();
+	</script>
+
+
 
 
 </body>
