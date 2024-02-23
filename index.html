@@ -2,92 +2,104 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="images2/contentguy.webp" type="image/png">
-        <!-- Canonical tag -->
-    <link rel="canonical" href="https://www.contentguy.co">
-	<title>Contentguy</title>
-	<link rel="stylesheet" href="styles.css">
-	<link rel="stylesheet" href="mobile-styles.css" media="screen and (max-width: 770px)">
-	<!-- SweetAlert2 CSS -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
-	<!-- font-awesome -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-	<!-- Swipper Js -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-	<!-- Locomotive Js -->
-	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> -->
-	<!-- GSAP -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-	<!-- ScrollTrigger -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-	<!-- Email Service Api integration -->
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-	</script>
-	<script type="text/javascript">
-		(function () {
-			emailjs.init({
-				publicKey: "VaLjoOzSohg21I0YL",
-			});
-		})();
-	</script>
-	<!-- SweetAlert2 JS -->
-	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    
-
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images2/contentguy.webp" type="image/png"> <!-- Your favicon image -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Fallback for older browsers -->
+    <title>Contentguy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mobile-styles.css" media="screen and (max-width: 770px)">
+    <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- Swipper Js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-K5L0936EN7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K5L0936EN7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-K5L0936EN7');
+    </script>
 
-  gtag('config', 'G-K5L0936EN7');
-</script>
-    
-      <!-- Meta Decription -->
-      <meta name="description" content="ContentGuy.co is a webagency for expert web design and app development services, delivering cutting-edge technology with the most modern designs.">
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/contentguy.co" target="_blank"><i class="fab fa-facebook"></i></a>
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/contentguy" target="_blank"><i class="fab fa-instagram"></i></a>
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/company/99392704" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <!-- YouTube -->
+    <a href="https://www.youtube.com/channel/UC3XmKXw3yTAwDjBJkAq4RCA" target="_blank"><i class="fab fa-youtube"></i></a>
 
+    <!-- Open Graph meta tags -->
+    <meta property="og:url" content="https://www.contentguy.co/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Content Guy - Web Design Agency" />
+    <meta property="og:description" content="A Web Design agency providing Web design and development as well as apps for businesses internationally. Rank #1 on Google with our SEO." />
+    <meta property="og:image" content="images2/contentguy.webp" />
+    <meta name="description" content="ContentGuy.co is your premier destination for expert web design and development services, delivering cutting-edge websites and customized apps for businesses worldwide. Elevate your online presence with our internationally acclaimed solutions. Rank #1 on Google with our SEO expertise.">
+
+    <!-- Canonical tag -->
+    <link rel="canonical" href="https://www.contentguy.co">
+
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Email Service Api integration -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "VaLjoOzSohg21I0YL",
+            });
+        })();
+    </script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <!-- ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
+    <!-- LocalBusiness schema -->
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Content Guy",
-  "image": "https://res.cloudinary.com/dy80ftu9k/image/upload/v1708516630/contentguy_gg6jqb.png",
-  "address": [
-    {
-      "@type": "PostalAddress",
-      "streetAddress": "123 Orchard Park Cir",
-      "addressLocality": "Davis",
-      "addressRegion": "CA",
-      "postalCode": "95616",
-      "addressCountry": "US"
-    },
-    {
-      "@type": "PostalAddress",
-      "streetAddress": "136 Kalachadpur, North Baridhara",
-      "addressLocality": "Dhaka",
-      "addressRegion": "Dhaka",
-      "postalCode": "1206",
-      "addressCountry": "Bangladesh"
-    }
-  ],
-  "telephone": ["+1 (408) 333-4849", "+88101614395930"],
-  "email": ["ridwan@contentguy.co", "rehnuma@contentguy.co"],
-  "url": "https://www.contentguy.co/",
-  "sameAs": [
-    "https://www.facebook.com/contentguy",
-    "https://www.twitter.com/contentguy",
-    "https://www.linkedin.com/company/contentguy"
-  ],
-  "openingHours": "24/7",
-  "priceRange": "$$$",
-  "description": "A Web Design agency providing Web design and development as well as apps for businesses internationally. Rank #1 on Google with our SEO."
-}
-</script>
-    
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Content Guy",
+            "image": "https://res.cloudinary.com/dy80ftu9k/image/upload/v1708516630/contentguy_gg6jqb.png",
+            "address": [
+                {
+                    "@type": "PostalAddress",
+                    "streetAddress": "123 Orchard Park Cir",
+                    "addressLocality": "Davis",
+                    "addressRegion": "CA",
+                    "postalCode": "95616",
+                    "addressCountry": "US"
+                },
+                {
+                    "@type": "PostalAddress",
+                    "streetAddress": "136 Kalachadpur, North Baridhara",
+                    "addressLocality": "Dhaka",
+                    "addressRegion": "Dhaka",
+                    "postalCode": "1206",
+                    "addressCountry": "Bangladesh"
+                }
+            ],
+            "telephone": ["+1 (408) 333-4849", "+88101614395930"],
+            "email": ["ridwan@contentguy.co", "rehnuma@contentguy.co"],
+            "url": "https://www.contentguy.co/",
+            "sameAs": [
+                "https://www.facebook.com/contentguy",
+                "https://www.twitter.com/contentguy",
+                "https://www.linkedin.com/company/contentguy"
+            ],
+            "openingHours": "24/7",
+            "priceRange": "$$$",
+            "description": "A Web Design agency providing Web design and development as well as apps for businesses internationally. Rank #1 on Google with our SEO."
+        }
+    </script>
 </head>
 
 <body>
