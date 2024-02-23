@@ -2676,29 +2676,29 @@ input[type="checkbox"] {
 }
 
 .d_card:nth-child(1):before {
-	background-image: url(./images2/blogs/a.png);
+	background-image: url(https://res.cloudinary.com/dy80ftu9k/image/upload/v1708726175/SEO%20Blogs%20content%20writing.png);
 	grid-column: span 4;
 	grid-row: span 12;
 }
 
 .d_card:nth-child(2):before {
-	background-image: url(./images2/blogs/funnel_flat.png);
+	background-image: url(https://res.cloudinary.com/dy80ftu9k/image/upload/v1708726176/web%20funnel%2C%20intregation.png);
 }
 
 
 .d_card:nth-child(3):before {
-	background-image: url(./images2/blogs/Canva.png);
+	background-image: url(https://res.cloudinary.com/dy80ftu9k/image/upload/v1708726175/canva%20editing%20tricks%20and%20tips.png);
 	background-size: cover;
 
 }
 
 .d_card:nth-child(4):before {
-	background-image: url(./images2/blogs/restaurant.png);
+	background-image: url(https://res.cloudinary.com/dy80ftu9k/image/upload/v1708726175/restaurant%20marketing%2C%20menu%20%2C%20ordering.png);
 	background-size: cover;
 }
 
 .d_card:nth-child(5):before {
-	background-image: url(./images2/blogs/SEO.png);
+	background-image: url(https://res.cloudinary.com/dy80ftu9k/image/upload/v1708726175/seo%20blogs%20content%20writing%20articles.png);
 	background-size: cover;
 }
 
