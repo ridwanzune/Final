@@ -158,6 +158,7 @@ header {
   margin: 0;
   padding: var(--block-padding);
   padding-top: 120px;
+  margin-top: -5rem;
 }
 
 .left-image,
@@ -170,13 +171,12 @@ header {
 }
 
 .left-image {
-  left: -15px;
-  top: 0px;
+  left: -5px;
 }
 
 .right-image {
   margin: 0;
-  right: -20px;
+  right: -10px;
 }
 
 .hero .contentt {
@@ -190,16 +190,35 @@ header {
 }
 
 .hero .contentt h1 {
-  font-size: 42px;
-  line-height: 60px;
+  font-size: 35px;
+  line-height: 50px;
+  padding-top: 3rem;
 }
 
 .hero .contentt h2 {
   font-size: 18px;
 }
+.contenttt {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero .contenttt h1 {
+  font-size: 35px;
+  line-height: 50px;
+  padding-top: 3rem;
+  text-align: center;
+}
+
+.hero .contenttt h2 {
+  font-size: 18px;
+  text-align: center;
+}
 
 .cta-button {
   padding: 16px 60px;
+  margin: auto;
 }
 
 .white-container p {
@@ -246,6 +265,11 @@ header {
   margin-right: 50%;
 }
 
+.column {
+  padding: 50px 30px 0;
+  margin: 0;
+}
+
 .column h2 {
   padding: 0;
   font-size: 24px;
@@ -256,12 +280,34 @@ header {
   line-height: auto;
 }
 
+.columnm {
+  padding: 50px 30px 0;
+  margin: 0;
+}
+
+.columnm h2 {
+  padding: 0;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+  font-family: "MuseoModerno", sans-serif;
+}
+
+.columnm .columnOld {
+  margin-top: -15px;
+  /* margin-top: 20px; */
+  line-height: normal;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
 .row {
   flex-direction: column;
 }
 
 .logo-container {
-  padding: 10px 0;
+  padding: 50px 0 0 0;
 }
 
 .logo {
@@ -391,6 +437,36 @@ header {
   transform: translate(-50%);
 }
 
+
+@media only screen and (max-width: 440px) {
+  .blue-container .blueh1 {
+    max-width: 700px;
+    letter-spacing: 0.5px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-family: "poppins", sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 30px;
+    color: white;
+  }
+}
+
+
+@media only screen and (max-width: 440px) {
+  .blue-container .blueh2 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+
+
 .benefits-top-img {
   margin: 0;
   width: 20%;
@@ -440,7 +516,7 @@ header {
   padding: var(--block-padding);
 }
 
-.recent-works h1 {
+.recent-works .recentHead {
   font-size: 36px;
 }
 
@@ -626,6 +702,7 @@ header {
   width: 100%;
   height: 100%;
   color: #fff;
+  padding: 0.5rem;
 }
 
 
@@ -752,6 +829,7 @@ header {
 
 .review-head {
   margin-top: 100px;
+  font-size: 50px;
   color: white;
   text-align: center;
   font-family: 'Poppins';
@@ -762,7 +840,7 @@ header {
 .top-coma {
   position: absolute;
   left: 3%;
-  top: 5%;
+  top: 21%;
   width: 4%;
   height: 4%;
 }
@@ -776,7 +854,7 @@ header {
   transform: rotate(180deg);
 }
 
-.swiper-slide h1 {
+.swiper-slide h2 {
   max-width: 100%;
   letter-spacing: 0.5px;
   font-family: "Poppins", sans-serif;
@@ -787,11 +865,11 @@ header {
   text-align: start;
 }
 
-.swiper-slide h2 {
+.swiper-slide .slide-h2 {
   max-width: 100%;
   letter-spacing: 0.5px;
   font-family: "Poppins", sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 200;
   line-height: 20px;
   color: #ea552b;
@@ -830,7 +908,7 @@ header {
 
 .faq-heading {
   text-align: center;
-  font-family: "Plusjakartasans", sans-serif;
+	font-family: "MuseoModerno", sans-serif;
   margin: 10px 10px;
 }
 
@@ -1054,9 +1132,9 @@ input[type="checkbox"] {
 
 /* case study */
 .case-studyy {
+  margin-top: 2rem;
   position: relative;
   width: 100vw;
-  margin: auto;
   min-height: 60vh;
   /* margin-top: 2rem; */
   margin-bottom: 2rem;
@@ -1077,7 +1155,7 @@ input[type="checkbox"] {
   align-items: center;
 }
 
-.case-studyy>div:first-child h1 {
+.case-studyy>div:first-child .oneoneone {
   font-size: 2.5rem;
   font-weight: 700;
   font-family: "poppins", sans-serif;
@@ -1089,7 +1167,7 @@ input[type="checkbox"] {
   font-weight: 600;
   font-family: "poppins", sans-serif;
   text-align: center;
-  margin-top: -0.7rem;
+  margin-top: -2.7rem;
 }
 
 .case-studyy>div:last-child {
@@ -1136,11 +1214,11 @@ input[type="checkbox"] {
   justify-content: center;
 }
 
-.footerrr .col h1 {
+.footerrr .col h2 {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   padding: 20px 0px 5px 0px;
   color: rgb(255, 255, 255);
   font-weight: 600;
@@ -1291,6 +1369,7 @@ input[type="checkbox"] {
 .blogHead {
   margin: auto;
   text-align: center;
+  font-family: "MuseoModerno", sans-serif;
   color: white;
   padding-left: 10px;
   padding-right: 10px;
@@ -1346,27 +1425,27 @@ input[type="checkbox"] {
 }
 
 .auto-grid li:nth-child(1) {
-  background: url('./images2/blogs/a.png') no-repeat center/cover;
+  background: url('https://i.ibb.co/1vdPTv0/UI-fat.png') no-repeat center/cover;
 
 }
 
 .auto-grid li:nth-child(2) {
-  background: url('./images2/blogs/funnel.png') no-repeat center/cover;
+  background: url('https://i.ibb.co/pwGv7VG/funnel.png') no-repeat center/cover;
 
 }
 
 .auto-grid li:nth-child(3) {
-  background: url('./images2/blogs/Canva.png') no-repeat center/cover;
+  background: url('https://i.ibb.co/W27HNBZ/Canva.png') no-repeat center/cover;
 
 }
 
 .auto-grid li:nth-child(4) {
-  background: url('./images2/blogs/restaurant.png') no-repeat center/cover;
+  background: url('https://i.ibb.co/HzQ6dRg/restaurant.png') no-repeat center/cover;
 
 }
 
 .auto-grid li:nth-child(5) {
-  background: url('./images2/blogs/SEO.png') no-repeat center/cover;
+  background: url('https://i.ibb.co/86dV3M4/SEO.jpg') no-repeat center/cover;
 
 }
 

@@ -117,16 +117,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
 // For Modal
 document.addEventListener("DOMContentLoaded", function () {
   const burgerOpenElements = document.querySelectorAll("#burger-open");
 
   burgerOpenElements.forEach(function (element) {
     element.addEventListener("click", function () {
-      const meny = document.getElementById("meny");
-      meny.classList.toggle("open");
+      // Check if the device width is smaller or equal to 768px (adjust as needed)
+      if (window.innerWidth <= 768) {
+        // Open the modal for smaller devices
+        $('.bottom-bar').css('display', 'block');
+        $('.bottom-sheet-wrapper').addClass('show-modal');
+      } else {
+        // Open the sidebar for larger devices
+        const meny = document.getElementById("meny");
+        meny.classList.toggle("open");
+      }
     });
+  });
+
+  $('.close, .backdrop').click(function () {
+    $('.bottom-sheet-wrapper').removeClass('show-modal');
+    $('.bottom-bar').css('display', 'none');
   });
 });
 

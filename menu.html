@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="menu.css">
+    <title>menu</title>
+</head>
+
+<body>
+
+
+
+    <button class="click">click</button>
+    <div class="bottom-sheet-wrapper">
+        <div class="backdrop"></div>
+        <div class="bottom-sheet">
+            <div class="close center">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('.click').click(() => {
+            $('.bottom-sheet-wrapper').addClass('show-modal');
+        })
+
+        $('.close, .backdrop').click(() => {
+            $('.bottom-sheet-wrapper').removeClass('show-modal');
+        })
+    </script>
+</body>
+
+</html>

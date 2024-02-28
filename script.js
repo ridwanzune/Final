@@ -81,36 +81,36 @@ function isElementInViewport(el) {
 
 // Function to handle scroll events and play/pause audio accordingly
 function handleScroll() {
-    // Get all sections
-    const sections = document.querySelectorAll('section');
+	// Get all sections
+	const sections = document.querySelectorAll('section');
 
-    // Iterate over each section
-    sections.forEach(section => {
-        // Check if the section is in the viewport
-        if (isElementInViewport(section)) {
-            // Pause all audio elements except the one associated with the current section
-            pauseAllAudio();
+	// Iterate over each section
+	sections.forEach(section => {
+		// Check if the section is in the viewport
+		if (isElementInViewport(section)) {
+			// Pause all audio elements except the one associated with the current section
+			pauseAllAudio();
 
-            // Play audio associated with the current section
-            switch (section.id) {
-                case "herohero":
-                    document.getElementById('background-music').play();
-                    break;
-                case "casecase":
-                    document.getElementById('background-music1').play();
-                    break;
-                case "services":
-                    document.getElementById('background-music2').play();
-                    break;
-                case "recent-works":
-                    document.getElementById('background-music0').play();
-                    break;
-                case "footer-div":
-                    document.getElementById('background-music3').play();
-                    break;
-            }
-        }
-    });
+			// Play audio associated with the current section
+			switch (section.id) {
+				case "herohero":
+					document.getElementById('background-music').play();
+					break;
+				case "casecase":
+					document.getElementById('background-music1').play();
+					break;
+				case "services":
+					document.getElementById('background-music2').play();
+					break;
+				case "recent-works":
+					document.getElementById('background-music0').play();
+					break;
+				case "footer-div":
+					document.getElementById('background-music3').play();
+					break;
+			}
+		}
+	});
 }
 
 // Add scroll event listener to call handleScroll function
@@ -194,19 +194,29 @@ window.addEventListener("load", function () {
 const elementsToReveal = document.querySelectorAll(".contentt");
 
 function revealOnScroll() {
-	elementsToReveal.forEach((element) => {
-		const elementTop = element.getBoundingClientRect().top;
-		const windowHeight = window.innerHeight;
+	const screenWidth = window.innerWidth;
 
-		if (elementTop - windowHeight <= 0) {
-			element.style.opacity = 1;
-			element.style.transform = "translateY(0px)";
-		}
-	});
+	if (screenWidth > 768) {
+		elementsToReveal.forEach((element) => {
+			const elementTop = element.getBoundingClientRect().top;
+			const windowHeight = window.innerHeight;
+
+			if (elementTop - windowHeight <= 0) {
+				element.style.opacity = 1;
+				element.style.transform = "translateY(0px)";
+			}
+		});
+	} else {
+		elementsToReveal.forEach((element) => {
+			element.style.opacity = "";
+			element.style.transform = "";
+		});
+	}
 }
 
 window.addEventListener("scroll", revealOnScroll);
-revealOnScroll();
+revealOnScroll(); // Initial check on page load
+
 
 window.addEventListener("load", function () {
 	var navbar = document.querySelector(".navbar");
@@ -230,128 +240,128 @@ function isElementInViewport(element) {
 	);
 }
 
-window.addEventListener("scroll", function () {
-	var navbar = document.querySelector(".column");
+// window.addEventListener("scroll", function () {
+// 	var navbar = document.querySelector(".column");
 
-	if (isElementInViewport(navbar)) {
-		// Apply the entrance animation
-		navbar.style.opacity = 0;
-		navbar.style.transform = "translateY(40px)";
+// 	if (isElementInViewport(navbar)) {
+// 		// Apply the entrance animation
+// 		navbar.style.opacity = 0;
+// 		navbar.style.transform = "translateY(40px)";
 
-		setTimeout(function () {
-			navbar.style.transition = "opacity 1s ease, transform 1s ease";
-			navbar.style.opacity = 1;
-			navbar.style.transform = "translateY(0)";
-		}, 0); // No delay, animation starts immediately
-	}
-});
-window.addEventListener("scroll", function () {
-	var navbar = document.querySelector(".row");
+// 		setTimeout(function () {
+// 			navbar.style.transition = "opacity 1s ease, transform 1s ease";
+// 			navbar.style.opacity = 1;
+// 			navbar.style.transform = "translateY(0)";
+// 		}, 0); // No delay, animation starts immediately
+// 	}
+// });
+// window.addEventListener("scroll", function () {
+// 	var navbar = document.querySelector(".row");
 
-	if (isElementInViewport(navbar)) {
-		// Apply the entrance animation
-		navbar.style.opacity = 0;
-		navbar.style.transform = "translateY(50px)";
+// 	if (isElementInViewport(navbar)) {
+// 		// Apply the entrance animation
+// 		navbar.style.opacity = 0;
+// 		navbar.style.transform = "translateY(50px)";
 
-		setTimeout(function () {
-			navbar.style.transition = "opacity 1s ease, transform 1s ease";
-			navbar.style.opacity = 1;
-			navbar.style.transform = "translateY(0)";
-		}, 0); // No delay, animation starts immediately
-	}
-});
-window.addEventListener("scroll", function () {
-	var navbar = document.querySelector(".pink-column");
+// 		setTimeout(function () {
+// 			navbar.style.transition = "opacity 1s ease, transform 1s ease";
+// 			navbar.style.opacity = 1;
+// 			navbar.style.transform = "translateY(0)";
+// 		}, 0); // No delay, animation starts immediately
+// 	}
+// });
+// window.addEventListener("scroll", function () {
+// 	var navbar = document.querySelector(".pink-column");
 
-	if (isElementInViewport(navbar)) {
-		// Apply the entrance animation
-		navbar.style.opacity = 0;
-		navbar.style.transform = "translateY(50px)";
+// 	if (isElementInViewport(navbar)) {
+// 		// Apply the entrance animation
+// 		navbar.style.opacity = 0;
+// 		navbar.style.transform = "translateY(50px)";
 
-		setTimeout(function () {
-			navbar.style.transition = "opacity 1s ease, transform 1s ease";
-			navbar.style.opacity = 1;
-			navbar.style.transform = "translateY(0)";
-		}, 0); // No delay, animation starts immediately
-	}
-});
-window.addEventListener("scroll", function () {
-	var navbar = document.querySelector(".blue-container");
+// 		setTimeout(function () {
+// 			navbar.style.transition = "opacity 1s ease, transform 1s ease";
+// 			navbar.style.opacity = 1;
+// 			navbar.style.transform = "translateY(0)";
+// 		}, 0); // No delay, animation starts immediately
+// 	}
+// });
+// window.addEventListener("scroll", function () {
+// 	var navbar = document.querySelector(".blue-container");
 
-	if (isElementInViewport(navbar)) {
-		// Apply the entrance animation
-		navbar.style.opacity = 0;
-		navbar.style.transform = "translateY(50px)";
+// 	if (isElementInViewport(navbar)) {
+// 		// Apply the entrance animation
+// 		navbar.style.opacity = 0;
+// 		navbar.style.transform = "translateY(50px)";
 
-		setTimeout(function () {
-			navbar.style.transition = "opacity 1s ease, transform 1s ease";
-			navbar.style.opacity = 1;
-			navbar.style.transform = "translateY(0)";
-		}, 0); // No delay, animation starts immediately
-	}
-});
+// 		setTimeout(function () {
+// 			navbar.style.transition = "opacity 1s ease, transform 1s ease";
+// 			navbar.style.opacity = 1;
+// 			navbar.style.transform = "translateY(0)";
+// 		}, 0); // No delay, animation starts immediately
+// 	}
+// });
 
-window.addEventListener("scroll", function () {
-	var navbar = document.querySelector(".six-grid");
+// window.addEventListener("scroll", function () {
+// 	var navbar = document.querySelector(".six-grid");
 
-	if (isElementInViewport(navbar)) {
-		// Apply the entrance animation
-		navbar.style.opacity = 0;
-		navbar.style.transform = "translateY(20px)";
+// 	if (isElementInViewport(navbar)) {
+// 		// Apply the entrance animation
+// 		navbar.style.opacity = 0;
+// 		navbar.style.transform = "translateY(20px)";
 
-		setTimeout(function () {
-			navbar.style.transition = "opacity 1s ease, transform 1s ease";
-			navbar.style.opacity = 1;
-			navbar.style.transform = "translateY(0)";
-		}, 0);
-	}
-});
+// 		setTimeout(function () {
+// 			navbar.style.transition = "opacity 1s ease, transform 1s ease";
+// 			navbar.style.opacity = 1;
+// 			navbar.style.transform = "translateY(0)";
+// 		}, 0);
+// 	}
+// });
 
-window.addEventListener("scroll", function () {
-	var navbar = document.querySelector(".recent-works img");
+// window.addEventListener("scroll", function () {
+// 	var navbar = document.querySelector(".recent-works img");
 
-	if (isElementInViewport(navbar)) {
-		// Apply the entrance animation
-		navbar.style.opacity = 1;
-		navbar.style.transform = "translateY(-50px)";
+// 	if (isElementInViewport(navbar)) {
+// 		// Apply the entrance animation
+// 		navbar.style.opacity = 1;
+// 		navbar.style.transform = "translateY(-50px)";
 
-		setTimeout(function () {
-			navbar.style.transition = "opacity 1s ease, transform 1s ease";
-			navbar.style.opacity = 1;
-			navbar.style.transform = "translateY(0)";
-		}, 0);
-	}
-});
-window.addEventListener("scroll", function () {
-	var navbar = document.querySelector(".recent-works h1");
+// 		setTimeout(function () {
+// 			navbar.style.transition = "opacity 1s ease, transform 1s ease";
+// 			navbar.style.opacity = 1;
+// 			navbar.style.transform = "translateY(0)";
+// 		}, 0);
+// 	}
+// });
+// window.addEventListener("scroll", function () {
+// 	var navbar = document.querySelector(".recent-works h1");
 
-	if (isElementInViewport(navbar)) {
-		// Apply the entrance animation
-		navbar.style.opacity = 1;
-		navbar.style.transform = "translateY(20px)";
+// 	if (isElementInViewport(navbar)) {
+// 		// Apply the entrance animation
+// 		navbar.style.opacity = 1;
+// 		navbar.style.transform = "translateY(20px)";
 
-		setTimeout(function () {
-			navbar.style.transition = "opacity 1s ease, transform 2s ease";
-			navbar.style.opacity = 1;
-			navbar.style.transform = "translateY(0)";
-		}, 100);
-	}
-});
-window.addEventListener("scroll", function () {
-	var navbar = document.querySelector(".projects-grid ");
+// 		setTimeout(function () {
+// 			navbar.style.transition = "opacity 1s ease, transform 2s ease";
+// 			navbar.style.opacity = 1;
+// 			navbar.style.transform = "translateY(0)";
+// 		}, 100);
+// 	}
+// });
+// window.addEventListener("scroll", function () {
+// 	var navbar = document.querySelector(".projects-grid ");
 
-	if (isElementInViewport(navbar)) {
-		// Apply the entrance animation
-		navbar.style.opacity = 1;
-		navbar.style.transform = "translateY(50px)";
+// 	if (isElementInViewport(navbar)) {
+// 		// Apply the entrance animation
+// 		navbar.style.opacity = 1;
+// 		navbar.style.transform = "translateY(50px)";
 
-		setTimeout(function () {
-			navbar.style.transition = "opacity 1s ease, transform 1s ease";
-			navbar.style.opacity = 1;
-			navbar.style.transform = "translateY(0)";
-		}, 50);
-	}
-});
+// 		setTimeout(function () {
+// 			navbar.style.transition = "opacity 1s ease, transform 1s ease";
+// 			navbar.style.opacity = 1;
+// 			navbar.style.transform = "translateY(0)";
+// 		}, 50);
+// 	}
+// });
 
 document.addEventListener("DOMContentLoaded", function () {
 	const toggleButtons = document.querySelectorAll(".toggle-btn");
@@ -426,9 +436,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	burgerOpenElements.forEach(function (element) {
 		element.addEventListener("click", function () {
-			const meny = document.getElementById("meny");
-			meny.classList.toggle("open");
+			// Check if the device width is smaller or equal to 768px (adjust as needed)
+			if (window.innerWidth <= 768) {
+				// Open the modal for smaller devices
+				$('.bottom-bar').css('display', 'block');
+				$('.bottom-sheet-wrapper').addClass('show-modal');
+			} else {
+				// Open the sidebar for larger devices
+				const meny = document.getElementById("meny");
+				meny.classList.toggle("open");
+			}
 		});
+	});
+
+	$('.close, .backdrop').click(function () {
+		$('.bottom-sheet-wrapper').removeClass('show-modal');
+		$('.bottom-bar').css('display', 'none');
 	});
 });
 
