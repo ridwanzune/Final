@@ -16,7 +16,7 @@ body {
   background-color: #141414;
   color: white;
   box-sizing: border-box;
-  padding-top: 5rem;
+  /* padding-top: 5rem; */
   cursor: none;
 }
 
@@ -676,34 +676,59 @@ body {
 
 
 
-
-
-
-
-
-
 @media only screen and (max-width: 440px) {
-  .footer-distributed, .btm {
-    display: none;
+  .container,
+  .cursor-dot {
+      display: none;
   }
+}
+
+
+.mbl-container {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  position: relative;
+}
+
+@media only screen and (min-width: 440px) {
+  .mbl-container {
+      display: none;
+  }
+}
+
+.mbl-container .summaryyy {
+  width: 370px;
+  height: 100%;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.mbl-container .summaryyy img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 30px;
+}
+
+
+.footerrr {
+  background-color: #141414;
+  display: block;
+  width: 100%;
+  position: relative;
+  height: auto;
+  margin-top: 4rem;
+  font-family: "Roboto", sans-serif;
 }
 
 @media only screen and (min-width: 440px) {
   .footerrr {
     display: none;
   }
-}
-
-
-.footerrr {
-  background-color: #0f0f0f;
-  display: block;
-  width: 100%;
-  position: relative;
-  height: auto;
-  margin-top: 10rem;
-  font-family: "Roboto", sans-serif;
-  /* padding: 5rem 0 5rem 0; */
 }
 
 .footerrr .col {
@@ -826,4 +851,3 @@ body {
 .clearfix {
   clear: both;
 }
-

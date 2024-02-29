@@ -18,7 +18,6 @@ document.addEventListener("scroll", function () {
 });
 
 
-// Function to check if an element is in view
 function isElementInViewport(el) {
 	const rect = el.getBoundingClientRect();
 	return (
@@ -27,96 +26,25 @@ function isElementInViewport(el) {
 	);
 }
 
-// Function to play background music when the element is in view
-// function handleScroll(sectionId) {
-// 	const section = document.getElementById(sectionId);
-// 	const backgroundMusic = document.getElementById("background-music");
-// 	const backgroundMusic1 = document.getElementById("background-music1");
-// 	const backgroundMusic2 = document.getElementById("background-music2");
-// 	const backgroundMusic3 = document.getElementById("background-music3");
-// 	const backgroundMusic4 = document.getElementById("background-music0");
-
-// 	// Check if the current section is in the viewport
-// 	if (isElementInViewport(section)) {
-// 		// Pause all audio elements
-// 		pauseAllAudio();
-
-// 		// Play audio associated with the current section
-// 		switch (sectionId) {
-// 			case "herohero":
-// 				backgroundMusic.play();
-// 				break;
-// 			case "casecase":
-// 				backgroundMusic1.play();
-// 				break;
-// 			case "services":
-// 				backgroundMusic2.play();
-// 				break;
-// 			case "footer-div":
-// 				backgroundMusic3.play();
-// 				break;
-// 			case "recent-works":
-// 				backgroundMusic4.play();
-// 				break;
-// 		}
-// 	} else {
-// 		pauseAllAudio();
-// 	}
-// }
-
-// function pauseAllAudio() {
-// 	const audioElements = document.querySelectorAll("audio");
-// 	audioElements.forEach(audio => {
-// 		audio.pause();
-// 	});
-// }
-
-// window.addEventListener('scroll', function () {
-// 	handleScroll("herohero");
-// 	handleScroll("casecase");
-// 	handleScroll("services");
-// 	handleScroll("footer-div");
-// 	handleScroll("recent-works");
-// });
-
+function pauseAllAudio() {
+	const audioElements = document.querySelectorAll("audio");
+	audioElements.forEach(audio => {
+		audio.pause();
+	});
+}
 // Function to handle scroll events and play/pause audio accordingly
 function handleScroll() {
-	// Get all sections
 	const sections = document.querySelectorAll('section');
 
-	// Iterate over each section
 	sections.forEach(section => {
-		// Check if the section is in the viewport
 		if (isElementInViewport(section)) {
-			// Pause all audio elements except the one associated with the current section
 			pauseAllAudio();
-
-			// Play audio associated with the current section
-			switch (section.id) {
-				case "herohero":
-					document.getElementById('background-music').play();
-					break;
-				case "casecase":
-					document.getElementById('background-music1').play();
-					break;
-				case "services":
-					document.getElementById('background-music2').play();
-					break;
-				case "recent-works":
-					document.getElementById('background-music0').play();
-					break;
-				case "footer-div":
-					document.getElementById('background-music3').play();
-					break;
-			}
 		}
 	});
 }
 
-// Add scroll event listener to call handleScroll function
 window.addEventListener('scroll', handleScroll);
 
-// Call handleScroll initially to check audio playback on page load
 handleScroll();
 
 
@@ -184,52 +112,14 @@ window.addEventListener("load", function () {
 	var totalWidth = 0;
 
 	images.forEach(function (img) {
-		totalWidth += img.offsetWidth + 20; // Account for margin-right
+		totalWidth += img.offsetWidth + 20;
 	});
 
 	projectsDiv.style.width = totalWidth + "px";
 });
 
-//scroll and reveal
-const elementsToReveal = document.querySelectorAll(".contentt");
-
-function revealOnScroll() {
-	const screenWidth = window.innerWidth;
-
-	if (screenWidth > 768) {
-		elementsToReveal.forEach((element) => {
-			const elementTop = element.getBoundingClientRect().top;
-			const windowHeight = window.innerHeight;
-
-			if (elementTop - windowHeight <= 0) {
-				element.style.opacity = 1;
-				element.style.transform = "translateY(0px)";
-			}
-		});
-	} else {
-		elementsToReveal.forEach((element) => {
-			element.style.opacity = "";
-			element.style.transform = "";
-		});
-	}
-}
-
-window.addEventListener("scroll", revealOnScroll);
-revealOnScroll(); // Initial check on page load
 
 
-window.addEventListener("load", function () {
-	var navbar = document.querySelector(".navbar");
-
-	navbar.style.opacity = 0;
-	navbar.style.transform = "translateX(-50%) translateY(20px)";
-
-	setTimeout(function () {
-		navbar.style.transition = "opacity 1s ease, transform 0.5s ease";
-		navbar.style.opacity = 1;
-		navbar.style.transform = "translateX(-50%) translateY(0)";
-	}, 1000);
-});
 
 // Function to check if an element is in the viewport
 function isElementInViewport(element) {
@@ -517,6 +407,54 @@ function sendMail() {
 		});
 }
 
+function sendMail() {
+    var email = document.querySelector(".bottom-bar #email_id").value;
+    var message = document.querySelector(".bottom-bar #message").value;
+
+    // Simple form validation
+    if (!email.trim() || !message.trim()) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Please fill out both email and message fields.',
+        });
+        return;
+    }
+
+    var params = {
+        email_id: email,
+        message: message
+    };
+
+    emailjs.send("service_46rv23h", "template_3s6151r", params)
+        .then(function (res) {
+            if (res.status === 200) {
+                // Clear the input fields
+                document.querySelector(".bottom-bar #email_id").value = "";
+                document.querySelector(".bottom-bar #message").value = "";
+
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Success!',
+                    text: 'Thank you for contacting. We will get back to you soon',
+                });
+            } else {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'An error occurred while sending your message. Please try again later.',
+                });
+            }
+        })
+        .catch(function (error) {
+            console.error('Error sending email:', error);
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'An error occurred while sending your message. Please try again later.',
+            });
+        });
+}
 
 document.addEventListener("DOMContentLoaded", function () {
 	const image = document.getElementById("reload-image");
