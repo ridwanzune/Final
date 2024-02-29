@@ -1963,6 +1963,35 @@
 			},
 		});
 	</script>
+    
+    <script>
+    // Get the swiper container
+    const swiperContainer = document.querySelector('.myySwiper');
+
+    // Add event listener to detect mouse movement
+    swiperContainer.addEventListener('mousemove', function(event) {
+        // Get the width of the swiper container
+        const swiperWidth = swiperContainer.offsetWidth;
+
+        // Set the threshold for triggering scroll
+        const threshold = 300; // Adjust as needed
+
+        // Calculate the mouse position relative to the swiper container
+        const mouseX = event.clientX - swiperContainer.getBoundingClientRect().left;
+
+        // Check if mouse is near the right edge of the swiper container
+        if (mouseX >= swiperWidth - threshold) {
+            // Move the swiper container to the left
+            swiperContainer.scrollLeft += 10; // Adjust scrolling speed as needed
+        }
+
+        // Check if mouse is near the left edge of the swiper container
+        if (mouseX <= threshold) {
+            // Move the swiper container to the right
+            swiperContainer.scrollLeft -= 10; // Adjust scrolling speed as needed
+        }
+    });
+</script>
 	<!-- email service -->
 	<!-- SweetAlert2 JS -->
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
