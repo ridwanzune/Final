@@ -2528,7 +2528,7 @@ input[type="checkbox"] {
 	margin: auto;
 	font-family: var(--font-sans);
 	display: grid;
-	gap: 1rem;
+    gap: 1rem;
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: repeat(12, 1fr);
 
@@ -2683,29 +2683,29 @@ input[type="checkbox"] {
 }
 
 .d_card:nth-child(1):before {
-	background-image: url(https://res.cloudinary.com/dy80ftu9k/image/upload/v1708726175/SEO%20Blogs%20content%20writing.png);
+	background-image: url(https://res.cloudinary.com/dy80ftu9k/image/upload/v1709301572/Untitled_design_1_sb9rxd.webp);
 	grid-column: span 4;
 	grid-row: span 12;
 }
 
 .d_card:nth-child(2):before {
-	background-image: url(https://res.cloudinary.com/dy80ftu9k/image/upload/v1708726176/web%20funnel%2C%20intregation.png);
+	background-image: url(https://res.cloudinary.com/dy80ftu9k/image/upload/v1709301684/5_uhffon.webp);
 }
 
 
 .d_card:nth-child(3):before {
-	background-image: url(https://res.cloudinary.com/dy80ftu9k/image/upload/v1708726175/canva%20editing%20tricks%20and%20tips.png);
+	background-image: url(https://res.cloudinary.com/dy80ftu9k/image/upload/v1709301005/1_gyicu8.webp);
 	background-size: cover;
 
 }
 
 .d_card:nth-child(4):before {
-	background-image: url(https://res.cloudinary.com/dy80ftu9k/image/upload/v1708726175/restaurant%20marketing%2C%20menu%20%2C%20ordering.png);
+	background-image: url(https://res.cloudinary.com/dy80ftu9k/image/upload/v1709301005/2_wtl4ju.webp);
 	background-size: cover;
 }
 
 .d_card:nth-child(5):before {
-	background-image: url(https://res.cloudinary.com/dy80ftu9k/image/upload/v1708726175/seo%20blogs%20content%20writing%20articles.png);
+	background-image: url(https://res.cloudinary.com/dy80ftu9k/image/upload/v1709301005/4_sqj0km.webp);
 	background-size: cover;
 }
 
