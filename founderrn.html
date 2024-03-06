@@ -103,6 +103,22 @@
         .bottom-links a:hover {
             color: #ff8c00; /* Change link color to gradient on hover */
         }
+        
+        .animated-gradient {
+            background-image: linear-gradient(to right, #3050f5, #6030a0, #702080, #401080, #3010a0, #5000f0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: flow 2s linear infinite alternate;
+        }
+
+        @keyframes flow {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
     </style>
 
 </head>
@@ -111,19 +127,16 @@
     <div class="container">
         <h1>What I’m doing now</h1>
         <div class="content">
-            <h2>Building BOAST:</h2>
+            <h2>Building <span class="animated-gradient">BOAST</span>:</h2>
             <p>I'm working on a startup called Boast. It's a platform where both influencers and regular folks can earn cashback (up to 100%) for sharing their purchases. It only works for Boast members and partner brands.</p>
             <h2>Recent Progress:</h2>
             <ul>
                 <li><strong>March:</strong>
                     <ul>
-                        <li>Started development of a new consumer app (Boast).</li>
-                        <li>Reading Zero to One by Peter Thiel.</li>
-                        <li>Binging Reservoir dogs, Shogun, Zodiac.</li>
-                        <li>Seeking pre seed funding (Boast).</li>
-                        <li>Trying to get more traction (Boast).</li>
-                        <li>Finalizing prepaid card branding with a bank (Boast).</li>
-                        <li>Applying to accelerators and investors. Applying to YC too (Boast)</li>
+                        <li>Started development of a new consumer app.</li>
+                        <li>Seeking funding for Boast.</li>
+                        <li>Finalizing prepaid card branding with a bank.</li>
+                        <li>Applying to accelerators and investors.</li>
                     </ul>
                 </li>
                 <li><strong>February:</strong>
@@ -143,8 +156,6 @@
                 </li>
             </ul>
             <p>Last Updated on March 6th, 2024</p>
-            
-            <p>Email – ridwan@contentguy.co<br>
         </div>
         <div class="bottom-links">
             <p><strong>Go back:</strong> <a href="contentguy.co/founderin10m">Me in 10 Mins</a>, <a href="contentguy.co/founderin10s">Me in 10 Secs</a></p>
