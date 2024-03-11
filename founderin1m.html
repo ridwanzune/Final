@@ -1,144 +1,265 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ridwan Zunaid</title>
-    <meta name="description" content="Meet Ridwan Zunaid, transitioning from nerd to geek, sharing his journey, interests, and experiences.">
-    <link rel="canonical" href="https://contentguy.co/founderin1m">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Noto+Serif&display=swap" rel="stylesheet">
+    <meta
+      name="description"
+      content="Meet Ridwan Zunaid, transitioning from nerd to geek, sharing his journey, interests, and experiences."
+    />
+    <link rel="canonical" href="https://contentguy.co/founderin1m" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Noto+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <style>
-        body {
-            font-family: 'Noto Serif', serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fff; /* White background color */
-            display: flex;
-            justify-content: center;
-            align-items: flex-start; /* Align items at the top */
-            min-height: 100vh;
-            padding-top: 7.5px; /* Decrease top space over Ridwan Zunaid */
-            font-size: 1.2em; /* Decrease font size for paragraphs */
-            color: rgb(58, 65, 69); /* Set body text color */
-        }
+      body {
+        font-family: "Noto Serif", serif;
+        margin: 0;
+        padding: 0;
+        background-color: #fff; /* White background color */
+        /* display: flex;
+        justify-content: center;
+        align-items: flex-start;  */
+        /* Align items at the top */
+        min-height: 100vh;
+        padding-top: 7.5px; /* Decrease top space over Ridwan Zunaid */
+        font-size: 1.2em; /* Decrease font size for paragraphs */
+        color: rgb(58, 65, 69); /* Set body text color */
+      }
 
-        .container {
-            max-width: 45%; /* Adjust max-width to be 50% smaller */
-            margin: auto; /* Center the container */
-            background-color: #fff; /* White container background color */
-            border-radius: 20px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            padding: 10px 20px; /* Decrease padding from top and bottom */
-            display: flex;
-            flex-direction: column; /* Align content vertically */
-        }
+      .container {
+        /* max-width: 45%;  */
+        /* Adjust max-width to be 50% smaller */
+        margin: auto; /* Center the container */
+        background-color: #fff; /* White container background color */
+        border-radius: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        padding: 10px 20px; /* Decrease padding from top and bottom */
+        display: flex;
+        flex-direction: column; /* Align content vertically */
+      }
 
-        .social-bar {
-            background-color: #fff;
-            color: #000; /* Set text color to black */
-            padding: 20px;
-            border-radius: 0 0 20px 20px; /* Adjust border radius */
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start; /* Align items to the left */
-            margin-top: auto; /* Push to the bottom */
-        }
+      .social-bar {
+        background-color: #fff;
+        color: #000; /* Set text color to black */
+        padding: 20px;
+        border-radius: 0 0 20px 20px; /* Adjust border radius */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Align items to the left */
+        margin-top: auto; /* Push to the bottom */
+      }
 
-        .social-bar a {
-            color: #000; /* Set link color to black */
-            text-decoration: none;
-            margin: 10px 0;
-            transition: color 0.3s ease;
-        }
+      .social-bar a {
+        color: #000; /* Set link color to black */
+        text-decoration: none;
+        margin: 10px 0;
+        transition: color 0.3s ease;
+      }
 
-        .social-bar a:hover {
-            color: #ff8c00; /* Change link color to gradient on hover */
-        }
+      .social-bar a:hover {
+        color: #ff8c00; /* Change link color to gradient on hover */
+      }
 
-        .content {
-            padding: 20px; /* Decrease padding from both sides */
-            width: 100%;
-            font-family: 'Open Sans', sans-serif;
-            text-align: justify; /* Justify the body text */
-            border-left: 4px solid transparent; /* Remove yellow paragraph border */
-            padding-left: 10px; /* Add padding to match the border */
-            border-radius: 0 0 0 20px; /* Adjust border radius */
-        }
+      .content {
+        padding: 20px; /* Decrease padding from both sides */
+        width: 100%;
+        font-family: "Open Sans", sans-serif;
+        text-align: justify; /* Justify the body text */
+        border-left: 4px solid transparent; /* Remove yellow paragraph border */
+        padding-left: 10px; /* Add padding to match the border */
+        border-radius: 0 0 0 20px; /* Adjust border radius */
+      }
 
-        h1,
-        h2 {
-            color: #000; /* Set heading color to black */
-            margin-left: 10px; /* Move headings to the right */
-        }
+      h1,
+      h2 {
+        color: #000; /* Set heading color to black */
+        margin-left: 10px; /* Move headings to the right */
+      }
 
-        h1:first-of-type {
-            font-size: 2.4em; /* Increase font size for the first H1 */
-            margin-bottom: 0; /* Remove margin bottom */
-            cursor: pointer; /* Change cursor to pointer */
-            transition: color 0.3s ease; /* Smooth color transition */
-            display: inline-block; /* Make it inline */
-        }
+      h1:first-of-type {
+        font-size: 2.4em; /* Increase font size for the first H1 */
+        margin-bottom: 0; /* Remove margin bottom */
+        cursor: pointer; /* Change cursor to pointer */
+        transition: color 0.3s ease; /* Smooth color transition */
+        display: inline-block; /* Make it inline */
+      }
 
-        h1:first-of-type:hover {
-            background: linear-gradient(to right, #ff8c00, #ff4d00, #ff1a00); /* Gradient color for hover */
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+      h1:first-of-type:hover {
+        background: linear-gradient(
+          to right,
+          #ff8c00,
+          #ff4d00,
+          #ff1a00
+        ); /* Gradient color for hover */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
 
-        h1:last-of-type {
-            font-size: 2.2em; /* Increase font size for the last H1 */
-            margin-top: 0; /* Remove margin top for Me in 10 Seconds */
-        }
+      h1:last-of-type {
+        font-size: 2.2em; /* Increase font size for the last H1 */
+        margin-top: 0; /* Remove margin top for Me in 10 Seconds */
+      }
 
-        p {
-            font-size: 1em; /* Decrease font size for paragraphs */
-            margin: 0 0 10px 0; /* Add margin bottom */
-        }
+      p {
+        font-size: 1em; /* Decrease font size for paragraphs */
+        margin: 0 0 10px 0; /* Add margin bottom */
+      }
 
-        .bottom-links {
-            margin-top: auto; /* Align with body margin */
-            text-align: left; /* Left align the links */
-        }
+      .bottom-links {
+        margin-top: auto; /* Align with body margin */
+        text-align: left; /* Left align the links */
+      }
 
-        .bottom-links p {
-            margin: 5px; /* Reset margin */
-            padding: 0; /* Reset padding */
-        }
+      .bottom-links p {
+        margin: 5px; /* Reset margin */
+        padding: 0; /* Reset padding */
+      }
 
-        .bottom-links a {
-            color: #000; /* Set link color to black */
-            text-decoration: none;
-            margin: 0 10px; /* Add margin between links */
-            transition: color 0.3s ease; /* Smooth color transition */
-        }
+      .bottom-links a {
+        color: #000; /* Set link color to black */
+        text-decoration: none;
+        margin: 0 10px; /* Add margin between links */
+        transition: color 0.3s ease; /* Smooth color transition */
+      }
 
-        .bottom-links a:hover {
-            color: #ff8c00; /* Change link color to gradient on hover */
-        }
+      .bottom-links a:hover {
+        color: #ff8c00; /* Change link color to gradient on hover */
+      }
     </style>
+  </head>
 
-</head>
+  <body>
+    <div class="social-media-buttons">
+      <a
+        href="https://www.instagram.com/the1rid1"
+        target="_blank"
+        class="social-media-button"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="black"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-instagram"
+        >
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+      </a>
 
-<body>
-    <div class="container">
-        <h1 onclick="location.reload();">Ridwan Zunaid</h1>
-        <h1>Me in 1 Min</h1>
-        <div class="content">
-            <p>Transitioning from nerd to geek. I've explored various roles since I was 12, from teaching IELTS to serving dishes at weddings. Despite limited technology growing up, I've always harbored a desire to create something meaningful.</p>
-            <p>My entrepreneurial journey began with selling a weekly publication called "Youth Wave" to parents at my high school. I am curious by nature and love learning new things. I enjoy in-depth intellectual discussions especially with people with opposite views to my own. I try to keep my identity small.</p>
-            <p>I enjoy Stoic philosophy and love astronomy,  firmly believe that our challenges, no matter how daunting, pale in comparison to the vastness of the universe.Viewing every experience as an opportunity for growth, I maintain a positive outlook on life. I attribute many modern issues to the escalating complexity of our world, as people often retreat into echo chambers rather than confront these complexities. </p>
-            <p>An avid fan of movies and TV series, I hold a special affinity for vintage films.</p>
-            <p> I thrive in bustling environments where I can make a significant impact. Startups are better in this reagrd. I started a few myself. Some failed, some I lost interest in and a few currently consuming my days with exciting developments. Working on my own dream startup project at this moment. </p>
-            <p>I’m from Dhaka, Bangladesh, and have lived in Khulna, Delhi, Punjab and now back in Dhaka again.</p>
-        </div>
-        <div class="bottom-links">
-            <p><a href="https://contentguy.co/founderrn">Here’s what I’m doing now</a></p>
-            <p><a href="https://contentguy.co/foundermore">Want to know even more!? See me in 10 minutes</a></p>
-            <p><a href="mailto:ridwan@contentguy.co">ridwan@contentguy.co</a></p>
-        </div>
+      <a
+        href="https://www.facebook.com/ridwanzune/"
+        target="_blank"
+        class="social-media-button"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="black"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-facebook"
+        >
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12c0 4.72 3.44 8.63 7.94 9.35v-6.6H6.74v-2.72h3.2V9.77c0-3.16 1.88-4.89 4.73-4.89 1.35 0 2.81.24 2.81.24v3.1h-1.59c-1.56 0-2.04.97-2.04 1.96v2.36h3.46l-.55 2.72h-2.91V21.35C18.56 20.63 22 16.72 22 12c0-5.52-4.48-10-10-10z"
+          ></path>
+        </svg>
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/ridwan-zunaidul-islam-2b5b07173"
+        target="_blank"
+        class="social-media-button"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="black"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-linkedin"
+        >
+          <path
+            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+          ></path>
+          <rect x="2" y="9" width="4" height="12"></rect>
+          <circle cx="4" cy="4" r="2"></circle>
+        </svg>
+      </a>
     </div>
-</body>
 
+    <div class="container">
+      <h1 onclick="location.reload();">Ridwan Zunaid</h1>
+      <h1>Me in 1 Min</h1>
+      <div class="content">
+        <p>
+          Transitioning from nerd to geek. I've explored various roles since I
+          was 12, from teaching IELTS to serving dishes at weddings. Despite
+          limited technology growing up, I've always harbored a desire to create
+          something meaningful.
+        </p>
+        <p>
+          My entrepreneurial journey began with selling a weekly publication
+          called "Youth Wave" to parents at my high school. I am curious by
+          nature and love learning new things. I enjoy in-depth intellectual
+          discussions especially with people with opposite views to my own. I
+          try to keep my identity small.
+        </p>
+        <p>
+          I enjoy Stoic philosophy and love astronomy, firmly believe that our
+          challenges, no matter how daunting, pale in comparison to the vastness
+          of the universe.Viewing every experience as an opportunity for growth,
+          I maintain a positive outlook on life. I attribute many modern issues
+          to the escalating complexity of our world, as people often retreat
+          into echo chambers rather than confront these complexities.
+        </p>
+        <p>
+          An avid fan of movies and TV series, I hold a special affinity for
+          vintage films.
+        </p>
+        <p>
+          I thrive in bustling environments where I can make a significant
+          impact. Startups are better in this reagrd. I started a few myself.
+          Some failed, some I lost interest in and a few currently consuming my
+          days with exciting developments. Working on my own dream startup
+          project at this moment.
+        </p>
+        <p>
+          I’m from Dhaka, Bangladesh, and have lived in Khulna, Delhi, Punjab
+          and now back in Dhaka again.
+        </p>
+      </div>
+      <div class="bottom-links">
+        <p>
+          <a href="https://contentguy.co/founderrn"
+            >Here’s what I’m doing now</a
+          >
+        </p>
+        <p>
+          <a href="https://contentguy.co/foundermore"
+            >Want to know even more!? See more about me</a
+          >
+        </p>
+        <p><a href="mailto:ridwan@contentguy.co">ridwan@contentguy.co</a></p>
+      </div>
+    </div>
+  </body>
 </html>

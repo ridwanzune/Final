@@ -1,0 +1,128 @@
+:root {
+  /* --background: #060d23; */
+  --linkedin: #0a66c2;
+  --facebook: #38529a;
+
+  --black: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: var(--background); */
+  display: grid;
+  /* place-items: center; */
+  /* height: 100vh; */
+}
+
+@media only screen and (max-width: 990px) {
+  .social-media-buttons {
+    display: none;
+  }
+
+  .container {
+    max-width: 100%; /* Adjust max-width to be 50% smaller */
+    box-shadow: none;
+    border-radius: 0;
+    padding: 10px;
+  }
+
+  h1:first-of-type {
+    font-size: 2em; /* Increase font size for the first H1 */
+  }
+  h1:last-of-type {
+    font-size: 1.8em; /* Increase font size for the last H1 */
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .social-media-buttons {
+    display: flex;
+  }
+  .container {
+    max-width: 45%; /* Adjust max-width to be 50% smaller */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 50px;
+  }
+  h1:first-of-type {
+    font-size: 2.4em; /* Increase font size for the first H1 */
+  }
+
+  h1:last-of-type {
+    font-size: 2.2em; /* Increase font size for the last H1 */
+  }
+}
+
+/*  */
+
+.social-media-buttons {
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  position: fixed;
+  top: 100px;
+}
+
+.social-media-button {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+  outline: 2px solid black;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: grid;
+  place-items: center;
+}
+
+.social-media-button:hover {
+  outline-offset: 3px;
+  transition: all 0.3s;
+}
+
+.social-media-button:hover svg {
+  stroke: white;
+}
+
+.social-media-button img {
+  transition: all 0.3s;
+}
+
+.social-media-button:hover img {
+  transform: scale(1.15);
+}
+
+.social-media-button:hover:nth-child(1) {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+
+.social-media-button:hover:nth-child(2) {
+  background-color: var(--black);
+}
+
+/* .social-media-button:hover:nth-child(2) svg {
+  stroke: var(--x);
+} */
+
+.social-media-button:hover:nth-child(2) {
+  background-color: var(--facebook);
+}
+
+.social-media-button:hover:nth-child(3) {
+  background-color: var(--linkedin);
+}

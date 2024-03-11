@@ -1,167 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>What I’m doing now</title>
-    <meta name="description" content="Learn about what Rid1 is currently working on - Building BOAST.">
-    <link rel="canonical" href="https://contentguy.co/founderrn">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Noto+Serif&display=swap" rel="stylesheet">
+    <meta
+      name="description"
+      content="Learn about what Rid1 is currently working on - Building BOAST."
+    />
+    <link rel="canonical" href="https://contentguy.co/founderrn" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Noto+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <style>
-        body {
-            font-family: 'Noto Serif', serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fff; /* White background color */
-            display: flex;
-            justify-content: center;
-            align-items: flex-start; /* Align items at the top */
-            min-height: 100vh;
-            padding-top: 7.5px; /* Decrease top space over Rid1 */
-            font-size: 1.2em; /* Decrease font size for paragraphs */
-            color: rgb(58, 65, 69); /* Set body text color */
-        }
+      body {
+        font-family: "Noto Serif", serif;
+        margin: 0;
+        padding: 0;
+        background-color: #fff; /* White background color */
+        /* display: flex;
+        justify-content: center;
+        align-items: flex-start; */
+        /* Align items at the top */
+        min-height: 100vh;
+        padding-top: 7.5px; /* Decrease top space over Rid1 */
+        font-size: 1.2em; /* Decrease font size for paragraphs */
+        color: rgb(58, 65, 69); /* Set body text color */
+      }
 
-        .container {
-            max-width: 45%; /* Adjust max-width to be 50% smaller */
-            margin: auto; /* Center the container */
-            background-color: #fff; /* White container background color */
-            border-radius: 20px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            padding: 20px; /* Increase padding for more space */
-            display: flex;
-            flex-direction: column; /* Align content vertically */
-        }
+      .container {
+        /* max-width: 45%; */
+        /* Adjust max-width to be 50% smaller */
+        margin: auto; /* Center the container */
+        background-color: #fff; /* White container background color */
+        border-radius: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        padding: 20px; /* Increase padding for more space */
+        display: flex;
+        flex-direction: column; /* Align content vertically */
+      }
 
-        .content {
-            padding: 20px 0; /* Add space above and below content */
-            width: 100%;
-            font-family: 'Open Sans', sans-serif;
-            text-align: justify; /* Justify the body text */
-            border-left: 4px solid transparent; /* Remove yellow paragraph border */
-            padding-left: 10px; /* Add padding to match the border */
-            border-radius: 0 0 0 20px; /* Adjust border radius */
-        }
+      .content {
+        padding: 20px 0; /* Add space above and below content */
+        width: 100%;
+        font-family: "Open Sans", sans-serif;
+        text-align: justify; /* Justify the body text */
+        border-left: 4px solid transparent; /* Remove yellow paragraph border */
+        padding-left: 10px; /* Add padding to match the border */
+        border-radius: 0 0 0 20px; /* Adjust border radius */
+      }
 
-        h1,
-        h2 {
-            color: #000; /* Set heading color to black */
-            margin-left: 10px; /* Move headings to the right */
-        }
+      h1,
+      h2 {
+        color: #000; /* Set heading color to black */
+        margin-left: 10px; /* Move headings to the right */
+      }
 
-        h1:first-of-type {
-            font-size: 2.4em; /* Increase font size for the first H1 */
-            margin-bottom: 0; /* Remove margin bottom */
-            cursor: pointer; /* Change cursor to pointer */
-            transition: color 0.3s ease; /* Smooth color transition */
-            display: inline-block; /* Make it inline */
-        }
+      h1:first-of-type {
+        font-size: 2.4em; /* Increase font size for the first H1 */
+        margin-bottom: 0; /* Remove margin bottom */
+        cursor: pointer; /* Change cursor to pointer */
+        transition: color 0.3s ease; /* Smooth color transition */
+        display: inline-block; /* Make it inline */
+      }
 
-        h1:first-of-type:hover {
-            background: linear-gradient(to right, #ff8c00, #ff4d00, #ff1a00); /* Gradient color for hover */
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+      h1:first-of-type:hover {
+        background: linear-gradient(
+          to right,
+          #ff8c00,
+          #ff4d00,
+          #ff1a00
+        ); /* Gradient color for hover */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
 
-        h1:last-of-type {
-            font-size: 2.2em; /* Increase font size for the last H1 */
-            margin-top: 0; /* Remove margin top for Me in 10 Seconds */
-        }
+      h1:last-of-type {
+        font-size: 2.2em; /* Increase font size for the last H1 */
+        margin-top: 0; /* Remove margin top for Me in 10 Seconds */
+      }
 
-        h2 {
-            margin-left: 0; /* Adjust margin left for h2 tags */
-        }
+      h2 {
+        margin-left: 0; /* Adjust margin left for h2 tags */
+      }
 
-        p {
-            font-size: 1em; /* Decrease font size for paragraphs */
-            margin: 0 0 10px 0; /* Add margin bottom */
-        }
+      p {
+        font-size: 1em; /* Decrease font size for paragraphs */
+        margin: 0 0 10px 0; /* Add margin bottom */
+      }
 
-        ul {
-            list-style-type: disc; /* Use bullet points for unordered list */
-            margin-left: 20px; /* Add margin to the left for list items */
-        }
+      ul {
+        list-style-type: disc; /* Use bullet points for unordered list */
+        margin-left: 20px; /* Add margin to the left for list items */
+      }
 
-        .bottom-links {
-            margin-top: auto; /* Align with body margin */
-            text-align: left; /* Left align the links */
-        }
+      .bottom-links {
+        margin-top: auto; /* Align with body margin */
+        text-align: left; /* Left align the links */
+      }
 
-        .bottom-links p {
-            margin: 10px; /* Reset margin */
-            padding: 0; /* Reset padding */
-        }
+      .bottom-links p {
+        margin: 10px; /* Reset margin */
+        padding: 0; /* Reset padding */
+      }
 
-        .bottom-links a {
-            color: #000; /* Set link color to black */
-            text-decoration: none;
-            margin: 0 10px; /* Add margin between links */
-            transition: color 0.3s ease; /* Smooth color transition */
-        }
+      .bottom-links a {
+        color: #000; /* Set link color to black */
+        text-decoration: none;
+        margin: 0 10px; /* Add margin between links */
+        transition: color 0.3s ease; /* Smooth color transition */
+      }
 
-        .bottom-links a:hover {
-            color: #ff8c00; /* Change link color to gradient on hover */
-        }
-        
-        .animated-gradient {
-            background-image: linear-gradient(to right, #3050f5, #6030a0, #702080, #401080, #3010a0, #5000f0);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: flow 2s linear infinite alternate;
-        }
+      .bottom-links a:hover {
+        color: #ff8c00; /* Change link color to gradient on hover */
+      }
 
-        @keyframes flow {
-            0% {
-                background-position: 0% 50%;
-            }
-            100% {
-                background-position: 100% 50%;
-            }
+      .animated-gradient {
+        background-image: linear-gradient(
+          to right,
+          #3050f5,
+          #6030a0,
+          #702080,
+          #401080,
+          #3010a0,
+          #5000f0
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: flow 2s linear infinite alternate;
+      }
+
+      @keyframes flow {
+        0% {
+          background-position: 0% 50%;
         }
+        100% {
+          background-position: 100% 50%;
+        }
+      }
     </style>
+  </head>
 
-</head>
+  <body>
+    <div class="social-media-buttons">
+      <a
+        href="https://www.instagram.com/the1rid1"
+        target="_blank"
+        class="social-media-button"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="black"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-instagram"
+        >
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+      </a>
 
-<body>
-    <div class="container">
-        <h1>What I’m doing now</h1>
-        <div class="content">
-            <h2>Building <span class="animated-gradient">BOAST</span>:</h2>
-            <p>I'm working on a startup called Boast. It's a platform where both influencers and regular folks can earn cashback (up to 100%) for sharing their purchases. It only works for Boast members and partner brands.</p>
-            <h2>Recent Progress:</h2>
-            <ul>
-                <li><strong>March:</strong>
-                    <ul>
-                        <li>Started development of a new consumer app.</li>
-                        <li>Seeking funding for Boast.</li>
-                        <li>Finalizing prepaid card branding with a bank.</li>
-                        <li>Applying to accelerators and investors.</li>
-                    </ul>
-                </li>
-                <li><strong>February:</strong>
-                    <ul>
-                        <li>Hired a Relationship Manager for influencer partnerships.</li>
-                        <li>Hired a Manager for operations.</li>
-                        <li>Testing prototypes and securing brand partnerships for a May launch.</li>
-                    </ul>
-                </li>
-                <li><strong>January:</strong>
-                    <ul>
-                        <li>Created the prototype.</li>
-                        <li>Finalized a co-founder.</li>
-                        <li>Hired developers.</li>
-                        <li>Stepped back from daily operations at Contentguy.co and xrougex.com.</li>
-                    </ul>
-                </li>
-            </ul>
-            <p>Last Updated on March 6th, 2024</p>
-        </div>
-        <div class="bottom-links">
-    <p><strong>Go back:</strong> <a href="http://www.contentguy.co/foundermore">Me in 10 Mins</a>, <a href="http://www.contentguy.co/founderin1m">Me in 10 Secs</a></p>
-</div>
+      <a
+        href="https://www.facebook.com/ridwanzune/"
+        target="_blank"
+        class="social-media-button"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="black"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-facebook"
+        >
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12c0 4.72 3.44 8.63 7.94 9.35v-6.6H6.74v-2.72h3.2V9.77c0-3.16 1.88-4.89 4.73-4.89 1.35 0 2.81.24 2.81.24v3.1h-1.59c-1.56 0-2.04.97-2.04 1.96v2.36h3.46l-.55 2.72h-2.91V21.35C18.56 20.63 22 16.72 22 12c0-5.52-4.48-10-10-10z"
+          ></path>
+        </svg>
+      </a>
 
+      <a
+        href="https://www.linkedin.com/in/ridwan-zunaidul-islam-2b5b07173"
+        target="_blank"
+        class="social-media-button"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="black"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-linkedin"
+        >
+          <path
+            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+          ></path>
+          <rect x="2" y="9" width="4" height="12"></rect>
+          <circle cx="4" cy="4" r="2"></circle>
+        </svg>
+      </a>
     </div>
-</body>
-
+    <div class="container">
+      <h1>What I’m doing now</h1>
+      <div class="content">
+        <h2>Building <span class="animated-gradient">BOAST</span>:</h2>
+        <p>
+          I'm working on a startup called Boast. It's a platform where both
+          influencers and regular folks can earn cashback (up to 100%) for
+          sharing their purchases. It only works for Boast members and partner
+          brands.
+        </p>
+        <h2>Recent Progress:</h2>
+        <ul>
+          <li>
+            <strong>March:</strong>
+            <ul>
+              <li>Started development of a new consumer app.</li>
+              <li>Seeking funding for Boast.</li>
+              <li>Finalizing prepaid card branding with a bank.</li>
+              <li>Applying to accelerators and investors.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>February:</strong>
+            <ul>
+              <li>Hired a Relationship Manager for influencer partnerships.</li>
+              <li>Hired a Manager for operations.</li>
+              <li>
+                Testing prototypes and securing brand partnerships for a May
+                launch.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>January:</strong>
+            <ul>
+              <li>Created the prototype.</li>
+              <li>Finalized a co-founder.</li>
+              <li>Hired developers.</li>
+              <li>
+                Stepped back from daily operations at Contentguy.co and
+                xrougex.com.
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <p>Last Updated on March 6th, 2024</p>
+      </div>
+      <div class="bottom-links">
+        <p>
+          <strong>Go back:</strong>
+          <a href="http://www.contentguy.co/foundermore">Me in 10 Mins</a>,
+          <a href="http://www.contentguy.co/founderin1m">Me in 10 Secs</a>
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
