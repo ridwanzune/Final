@@ -129,6 +129,38 @@
       .bottom-links a:hover {
         color: #ff8c00; /* Change link color to gradient on hover */
       }
+        
+.more-about-me {
+    font-size: 1.0em; /* Initial font size */
+}
+
+@keyframes pulse {
+    0%, 100% { color: #ff8c00; } /* Orange at start and end */
+    50% { color: #000; } /* Black in the middle */
+}
+
+.more-about-me a {
+    animation: pulse 2s infinite; /* Apply the animation */
+    transition: font-size 0.5s ease-in-out; /* Smooth transition for font size */
+    text-decoration: none; /* Remove underline */
+}
+        /* Existing CSS styles */
+        
+        /* Add the new CSS for the pulsating effect */
+        h1:first-of-type {
+            font-size: 2.4em; /* Initial font size */
+        }
+
+        @keyframes pulse {
+            0%, 100% { color: #ff8c00; } /* Orange at start and end */
+            50% { color: #000; } /* Black in the middle */
+        }
+
+        h1:first-of-type:hover {
+            animation: pulse 2s infinite; /* Apply the animation on hover */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     </style>
   </head>
 
@@ -253,11 +285,9 @@
             <a href="https://contentguy.co/founderrn">Here’s what I’m doing now</a>
         </strong>
     </p>
-    <p>
-        <strong>
-            <a href="https://contentguy.co/foundermore">Want to know even more!? See more about me</a>
-        </strong>
-    </p>
+<p class="more-about-me">
+    <a href="https://contentguy.co/foundermore">Want to know more about me? See 5 minute version</a>
+</p>
         <p><a href="mailto:ridwan@contentguy.co">ridwan@contentguy.co</a></p>
       </div>
     </div>
