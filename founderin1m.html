@@ -19,73 +19,71 @@
         font-family: "Noto Serif", serif;
         margin: 0;
         padding: 0;
-        background-color: #fff; /* White background color */
-        /* display: flex;
-        justify-content: center;
-        align-items: flex-start;  */
-        /* Align items at the top */
         min-height: 100vh;
-        padding-top: 7.5px; /* Decrease top space over Ridwan Zunaid */
-        font-size: 1.2em; /* Decrease font size for paragraphs */
-        color: rgb(58, 65, 69); /* Set body text color */
+        padding-top: 7.5px;
+        font-size: 1.2em;
+        color: rgb(58, 65, 69);
+        overflow: hidden;
+        position: relative;
       }
 
       .container {
-        /* max-width: 45%;  */
-        /* Adjust max-width to be 50% smaller */
-        margin: auto; /* Center the container */
-        background-color: #fff; /* White container background color */
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.9);
         border-radius: 20px;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-        padding: 10px 20px; /* Decrease padding from top and bottom */
+        padding: 10px 20px;
         display: flex;
-        flex-direction: column; /* Align content vertically */
+        flex-direction: column;
+        position: relative;
+        z-index: 2;
+        max-width: 800px;
       }
 
       .social-bar {
-        background-color: #fff;
-        color: #000; /* Set text color to black */
+        background-color: rgba(255, 255, 255, 0.9);
+        color: #000;
         padding: 20px;
-        border-radius: 0 0 20px 20px; /* Adjust border radius */
+        border-radius: 0 0 20px 20px;
         display: flex;
         flex-direction: column;
-        align-items: flex-start; /* Align items to the left */
-        margin-top: auto; /* Push to the bottom */
+        align-items: flex-start;
+        margin-top: auto;
       }
 
       .social-bar a {
-        color: #000; /* Set link color to black */
+        color: #000;
         text-decoration: none;
         margin: 10px 0;
         transition: color 0.3s ease;
       }
 
       .social-bar a:hover {
-        color: #ff8c00; /* Change link color to gradient on hover */
+        color: #ff8c00;
       }
 
       .content {
-        padding: 20px; /* Decrease padding from both sides */
+        padding: 20px;
         width: 100%;
         font-family: "Open Sans", sans-serif;
-        text-align: justify; /* Justify the body text */
-        border-left: 4px solid transparent; /* Remove yellow paragraph border */
-        padding-left: 10px; /* Add padding to match the border */
-        border-radius: 0 0 0 20px; /* Adjust border radius */
+        text-align: justify;
+        border-left: 4px solid transparent;
+        padding-left: 10px;
+        border-radius: 0 0 0 20px;
       }
 
       h1,
       h2 {
-        color: #000; /* Set heading color to black */
-        margin-left: 10px; /* Move headings to the right */
+        color: #000;
+        margin-left: 10px;
       }
 
       h1:first-of-type {
-        font-size: 2.4em; /* Increase font size for the first H1 */
-        margin-bottom: 0; /* Remove margin bottom */
-        cursor: pointer; /* Change cursor to pointer */
-        transition: color 0.3s ease; /* Smooth color transition */
-        display: inline-block; /* Make it inline */
+        font-size: 2.4em;
+        margin-bottom: 0;
+        cursor: pointer;
+        transition: color 0.3s ease;
+        display: inline-block;
       }
 
       h1:first-of-type:hover {
@@ -94,144 +92,113 @@
           #ff8c00,
           #ff4d00,
           #ff1a00
-        ); /* Gradient color for hover */
+        );
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
 
       h1:last-of-type {
-        font-size: 2.2em; /* Increase font size for the last H1 */
-        margin-top: 0; /* Remove margin top for Me in 10 Seconds */
+        font-size: 2.2em;
+        margin-top: 0;
       }
 
       p {
-        font-size: 1em; /* Decrease font size for paragraphs */
-        margin: 0 0 10px 0; /* Add margin bottom */
+        font-size: 1em;
+        margin: 0 0 10px 0;
       }
 
       .bottom-links {
-        margin-top: auto; /* Align with body margin */
-        text-align: left; /* Left align the links */
+        margin-top: auto;
+        text-align: left;
       }
 
       .bottom-links p {
-        margin: 5px; /* Reset margin */
-        padding: 0; /* Reset padding */
+        margin: 5px;
+        padding: 0;
       }
 
       .bottom-links a {
-        color: #000; /* Set link color to black */
+        color: #000;
         text-decoration: none;
-        margin: 0 10px; /* Add margin between links */
-        transition: color 0.3s ease; /* Smooth color transition */
+        margin: 0 10px;
+        transition: color 0.3s ease;
       }
 
       .bottom-links a:hover {
-        color: #ff8c00; /* Change link color to gradient on hover */
+        color: #ff8c00;
       }
-        
-.more-about-me {
-    font-size: 1.0em; /* Initial font size */
-}
 
-@keyframes pulse {
-    0%, 100% { color: #ff8c00; } /* Orange at start and end */
-    50% { color: #000; } /* Black in the middle */
-}
+      .more-about-me {
+        font-size: 1.0em;
+      }
 
-.more-about-me a {
-    animation: pulse 2s infinite; /* Apply the animation */
-    transition: font-size 0.5s ease-in-out; /* Smooth transition for font size */
-    text-decoration: none; /* Remove underline */
-}
-        /* Existing CSS styles */
-        
-        /* Add the new CSS for the pulsating effect */
-        h1:first-of-type {
-            font-size: 2.4em; /* Initial font size */
+      @keyframes pulse {
+        0%,
+        100% {
+          color: #ff8c00;
         }
-
-        @keyframes pulse {
-            0%, 100% { color: #ff8c00; } /* Orange at start and end */
-            50% { color: #000; } /* Black in the middle */
+        50% {
+          color: #000;
         }
+      }
 
-        h1:first-of-type:hover {
-            animation: pulse 2s infinite; /* Apply the animation on hover */
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+      .more-about-me a {
+        animation: pulse 2s infinite;
+        transition: font-size 0.5s ease-in-out;
+        text-decoration: none;
+      }
+
+      /* Dynamic Background Styles */
+      .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        overflow: hidden;
+        filter: blur(5px) contrast(1.2);
+        animation: changeBackground 15s infinite linear;
+      }
+
+      @keyframes changeBackground {
+        0% {
+          background: #ffffff;
         }
+        33% {
+          background: url('parrot-background.jpg') center/cover no-repeat;
+        }
+        66% {
+          background: url('sky-background.jpg') center/cover no-repeat;
+        }
+        100% {
+          background: #ffffff;
+        }
+      }
     </style>
   </head>
 
   <body>
+    <div class="background"></div>
+
     <div class="social-media-buttons">
-      <a
-        href="https://www.instagram.com/the1rid1"
-        target="_blank"
-        class="social-media-button"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="black"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="feather feather-instagram"
-        >
+      <a href="https://www.instagram.com/the1rid1" target="_blank" class="social-media-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
           <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
           <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
           <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
         </svg>
       </a>
 
-      <a
-        href="https://www.facebook.com/ridwanzune/"
-        target="_blank"
-        class="social-media-button"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="black"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="feather feather-facebook"
-        >
-          <path
-            d="M12 2C6.48 2 2 6.48 2 12c0 4.72 3.44 8.63 7.94 9.35v-6.6H6.74v-2.72h3.2V9.77c0-3.16 1.88-4.89 4.73-4.89 1.35 0 2.81.24 2.81.24v3.1h-1.59c-1.56 0-2.04.97-2.04 1.96v2.36h3.46l-.55 2.72h-2.91V21.35C18.56 20.63 22 16.72 22 12c0-5.52-4.48-10-10-10z"
-          ></path>
+      <a href="https://www.facebook.com/ridwanzune/" target="_blank" class="social-media-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook">
+          <path d="M12 2C6.48 2 2 6.48 2 12c0 4.72 3.44 8.63 7.94 9.35v-6.6H6.74v-2.72h3.2V9.77c0-3.16 1.88-4.89 4.73-4.89 1.35 0 2.81.24 2.81.24v3.1h-1.59c-1.56 0-2.04.97-2.04 1.96v2.36h3.46l-.55 2.72h-2.91V21.35C18.56 20.63 22 16.72 22 12c0-5.52-4.48-10-10-10z"></path>
         </svg>
       </a>
 
-      <a
-        href="https://www.linkedin.com/in/ridwan-zunaid-2b5b07173/"
-        target="_blank"
-        class="social-media-button"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="black"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="feather feather-linkedin"
-        >
-          <path
-            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
-          ></path>
+      <a href="https://www.linkedin.com/in/ridwan-zunaid-2b5b07173/" target="_blank" class="social-media-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
           <rect x="2" y="9" width="4" height="12"></rect>
           <circle cx="4" cy="4" r="2"></circle>
         </svg>
@@ -242,11 +209,15 @@
       <h1 onclick="location.reload();">Ridwan Zunaid</h1>
       <h1>Me in 1 Min</h1>
       <div class="content">
-
         <p>
-    <strong>CEO:</strong> <a href="https://getboast.co" style="background: linear-gradient(to right, #ff69b4, #ff1493); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: bold;">Boast</a> | <strong>Founded:</strong> <a href="https://xrougex.com" style="background: linear-gradient(to right, #ffa500, #ff4500); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: bold;">Rougex</a>, <a href="https://contentguy.co" style="background: linear-gradient(to right, #ffa500, #ff4500); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: bold;">Contentguy</a> | <strong>Ex head of Operations @</strong> <a href="https://tezzdigital.com" style="background: linear-gradient(to right, #800080, #4b0082); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: bold;">Tezz digital</a>
-</p>
-
+          <strong>CEO:</strong>
+          <a href="https://getboast.co" style="background: linear-gradient(to right, #ff69b4, #ff1493); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: bold;">Boast</a> |
+          <strong>Co-founder:</strong>
+          <a href="https://rougex.com" style="background: linear-gradient(to right, #ffa500, #ff4500); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: bold;">Rougex</a>,
+          <a href="https://contentguy.co" style="background: linear-gradient(to right, #ffa500, #ff4500); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: bold;">Contentguy</a> |
+          <strong>Ex head of Operations @</strong>
+          <a href="https://tezzdigital.com" style="background: linear-gradient(to right, #800080, #4b0082); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: bold;">Tezz digital</a>
+        </p>
         <p>
           Transitioning from nerd to geek. I've explored various roles since I
           was 12, from teaching IELTS to serving dishes at weddings. Despite
@@ -284,15 +255,15 @@
           and now back in Dhaka again.
         </p>
       </div>
-<div class="bottom-links">
-    <p>
-        <strong>
+      <div class="bottom-links">
+        <p>
+          <strong>
             <a href="https://contentguy.co/founderrn">Here’s what I’m doing now</a>
-        </strong>
-    </p>
-<p class="more-about-me">
-    <a href="https://contentguy.co/foundermore">Want to know more about me? See 5 minute version</a>
-</p>
+          </strong>
+        </p>
+        <p class="more-about-me">
+          <a href="https://contentguy.co/foundermore">Want to know more about me? See 5 minute version</a>
+        </p>
         <p><a href="mailto:ridwan@contentguy.co">ridwan@contentguy.co</a></p>
       </div>
     </div>
